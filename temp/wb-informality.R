@@ -11,14 +11,15 @@ new_wb_cache
 
 # get GDP, life expectancy, infant mortality
 wbsearch("urban", cache = new_wb_cache)
-informal = wbsearch("informality", cache = new_wb_cache)
+informal = wbsearch("urban", cache = new_wb_cache)
 
 indicators = c("EN.POP.SLUM.UR.ZS",
                "SL.ISV.IFRM.ZS",
                "SP.URB.TOTL.IN.ZS",
                "IC.FRM.INFOR.INFOR1",
                "IC.FRM.INFOR.INFOR2",
-               "IC.FRM.INFOR.INFOR4")
+               "IC.FRM.INFOR.INFOR4",
+               "EN.URB.LCTY.UR.ZS")
 
 
 # get data
@@ -47,4 +48,12 @@ wb_la =
   arrange(country, year)
 
 
-write_rds(wb_la, path = here("data", "wb-informal.rda"))
+# give dataset friendly names
+new = c("country", "year", "pct_pop_slum", "pct_informal_job",
+        "pct_urban", "pct_firms_compete", "pct_firms_constrain",
+        "pct_firms_registered", "pct_largest_city")
+
+colnames(wb_la) = new
+
+# output
+write_rds(wb_la, path = here("data", "informal.rda"))
