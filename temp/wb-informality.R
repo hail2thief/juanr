@@ -49,7 +49,7 @@ wb_la =
 
 
 # give dataset friendly names
-new = c("country", "year", "pct_pop_slum", "pct_informal_job",
+new = c("country", "year", "pct_pop_slum", "pct_informal_work",
         "pct_urban", "pct_firms_compete", "pct_firms_constrain",
         "pct_firms_registered", "pct_largest_city")
 
