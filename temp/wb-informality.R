@@ -39,7 +39,7 @@ lac = c("Cuba", "Dominican Republic",
 
 
 # filter to latin america and clean up
-wb_la =
+informal =
   wb_dat %>%
   filter(country %in% lac) %>%
   select(country, year = date, indicator, value) %>%
@@ -53,7 +53,7 @@ new = c("country", "year", "pct_pop_slum", "pct_informal_work",
         "pct_urban", "pct_firms_compete", "pct_firms_constrain",
         "pct_firms_registered", "pct_largest_city")
 
-colnames(wb_la) = new
+colnames(informal) = new
 
 # output
-write_rds(wb_la, path = here("data", "informal.rda"))
+save(informal, file = here("data", "informal.rda"))
