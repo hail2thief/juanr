@@ -8,14 +8,14 @@
 A (tibble) data frame with 1182 rows and 9 variables.
 }
 \source{
-World Bank (wbstats package).
+wbstats package and World Bank Indicators.
 }
 \usage{
 data(informal)
 }
 \description{
-A dataset containing data from World Bank indicators on urbanization and
-informality in select Latin America and the Caribbean countries. The variables are as follows:
+A panel dataset containing data from World Bank indicators on urbanization and
+informality in select Latin America and the Caribbean countries (1960-2019). The variables are as follows:
 }
 \details{
 \itemize{

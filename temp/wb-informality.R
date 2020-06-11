@@ -1,12 +1,10 @@
 rm(list=ls())
 library(tidyverse)
-library(janitor)
 library(here)
 library(wbstats)
 
 # get list of indicators
 new_wb_cache = wbcache()
-new_wb_cache
 
 
 # get GDP, life expectancy, infant mortality
