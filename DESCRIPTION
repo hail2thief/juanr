@@ -5,7 +5,7 @@ Version: 0.1.0
 Authors@R: person("Juan", "Tellez", email = "juan.f.tellez@gmail.com",
                       role = c("aut", "cre"))
 Maintainer: Juan F. Tellez <juan.f.tellez@gmail.com>
-Description: A collection of data sets bearing on political and economic variables from Latin America. Intended for teaching purposes.
+Description: A collection of data sets on political and economic topics in Latin America. Intended for teaching purposes.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
