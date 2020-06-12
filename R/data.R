@@ -177,6 +177,6 @@
 #' @keywords datasets
 #' @name peru_office_dev
 #' @usage data(peru_office_dev)
-#' @format A (tibble) data frame with 632 rows and 36 variables.
+#' @format A (tibble) data frame with 14,494 rows and 90 variables.
 #' @source Guardado, J. (2018). Office-selling, corruption, and long-term development in Peru. American Political Science Review, 112(4), 971-995.
 "peru_office_dev"
