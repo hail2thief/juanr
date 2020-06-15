@@ -180,3 +180,34 @@
 #' @format A (tibble) data frame with 14,494 rows and 90 variables.
 #' @source Guardado, J. (2018). Office-selling, corruption, and long-term development in Peru. American Political Science Review, 112(4), 971-995.
 "peru_office_dev"
+
+
+#' Varieties of Democracy Indicators for Latin America
+#'
+#' A dataset from the Varieties of Democracy (V-DEM) project that characterizes
+#' the different dimensions of democracy across Latin America. The variables are as follows:
+#'
+#' \itemize{
+#' \item v2x_polyarchy. To what extent is the ideal of electoral democracy in its fullest sense achieved?.
+#' Interval, from low to high (0-1) .
+#' \item v2x_libdem. To what extent is the ideal of liberal democracy achieved?.
+#' Interval, from low to high (0-1) .
+#' \item v2x_partipdem. To what extent is the ideal of participatory democracy achieved?.
+#' Interval, from low to high (0-1) .
+#' \item v2x_delibdem. To what extent is the ideal of deliberative democracy achieved?.
+#' Interval, from low to high (0-1) .
+#' \item v2x_egaldem. To what extent is the ideal of egalitarian democracy achieved?.
+#' Interval, from low to high (0-1) .
+#' \item v2x_freexp_altinf. To what extent does government respect press and media freedom,
+#' the freedom of ordinary people to discuss political matters at home and in the public sphere,
+#' as well as the freedom of academic and cultural expression?. Interval, from low to high (0-1).
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name vdem
+#' @usage data(vdem)
+#' @format A (tibble) data frame with 4,013 rows and 8 variables.
+#' @source The Varieties of Democracy (V-DEM) project, via: https://github.com/xmarquez/vdem.
+"vdem"
+

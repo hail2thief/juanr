@@ -5,7 +5,7 @@
 \alias{peru_office_dev}
 \title{Data on Sale of Provincial Governorships in Peru, 17th-18th century, and Contemporary Outcomes}
 \format{
-A (tibble) data frame with 632 rows and 36 variables.
+A (tibble) data frame with 14,494 rows and 90 variables.
 }
 \source{
 Guardado, J. (2018). Office-selling, corruption, and long-term development in Peru. American Political Science Review, 112(4), 971-995.
