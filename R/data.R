@@ -245,3 +245,28 @@
 #' @format A (tibble) data frame with 4,013 rows and 11 variables.
 #' @source The Varieties of Democracy (V-DEM) project, via: https://github.com/xmarquez/vdem.
 "gdp"
+
+
+#' Race and Colorism Survey Data from LAPOP
+#'
+#' Survey data on race and colorism in Colombia, Brazil, Mexico, Guatemala,
+#' and the Dominican Republic, from LAPOP, 2014 wave.
+#' The variables are as follows:
+#' \itemize{
+#' \item pais. Country
+#' \item q2. Age.
+#' \item etid. Ethnicity.
+#' \item ed. Years of schooling.
+#' \item colorr. Skin color (1 = lightest, 11 = darkest; see LAPOP color palette).
+#' \item q10new_14. Monthly household income (0 = no income, 16 = highest income; see labels).
+#' \item d5. Approval of homosexuals' right to run for office (1 = strongly disapprove, 10 = strongly approve).
+#' \item d6. Approval of same-sex couples' right to marry (1 = strongly disapprove, 10 = strongly approve).
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name race
+#' @usage data(race)
+#' @format A (tibble) data frame with 6,051 rows and 9 variables.
+#' @source Latin American Public Opinion Project.
+"race"
