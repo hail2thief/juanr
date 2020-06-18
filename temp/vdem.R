@@ -8,8 +8,7 @@ library(here)
 
 
 # v-dem codebook
-vdem_codebook %>%
-  View()
+vdem_codebook
 
 
 # what variables to keep
@@ -23,11 +22,6 @@ df1 = extract_vdem(section_number = 2)
 df2 = extract_vdem(section_number = 8, include_external = TRUE)
 
 
-
-# Democracy stuff ---------------------------------------------------------
-
-
-
 # subset to LA countries
 lac = c("Cuba", "Dominican Republic",
         "Hait", "Jamaica", "Trinidad & Tobago",
@@ -38,6 +32,11 @@ lac = c("Cuba", "Dominican Republic",
         "Brazil", "Chile", "Colombia",
         "Ecuador", "Paraguay", "Peru",
         "Uruguay", "Venezuela")
+
+
+# Democracy stuff ---------------------------------------------------------
+
+
 
 indicators = c("v2x_polyarchy",
                "v2x_libdem",
@@ -82,24 +81,48 @@ for(ii in 1:nrow(dict))
 
 
 
-df2 =
-  df2 %>%
-  filter(vdem_country_name %in% lac) %>%
-  filter(year > 1920) %>%
-  select(country = vdem_country_name, year,
-         e_migdppc:e_pt_coup)
+# indicators
+indicators = c("e_migdppc",
+               "e_miinflat",
+               "e_mipopula",
+               "e_miurbpop",
+               "e_peinfmor",
+               "e_pelifeex",
+               "e_total_oil_income_pc",
+               "e_cow_imports",
+               "e_cow_exports")
 
 
-# get GDP per capita
+# clean up
 gdp =
   df2 %>%
-  select(country, year, gdp_per_cap = e_migdppc) %>%
-  filter(year <= 2016)
+  filter(vdem_country_name %in% lac) %>%
+  select(country = vdem_country_name,
+         year, all_of(indicators))
 
 
-ggplot(data = gdp, aes(x = year, y = gdp_per_cap)) + geom_line() +
-  facet_wrap(vars(country), scales = "free_y") +
-  theme_light()
+
+# get dictionary
+dict = tibble(variable = vdem_codebook %>%
+                filter(name %in% indicators) %>%
+                pull(name),
+              label = vdem_codebook %>%
+                filter(name %in% indicators) %>%
+                pull(question),
+              source = vdem_codebook %>%
+                filter(name %in% indicators) %>%
+                pull(source))
 
 
-write_csv(gdp, path = "static/files/gdp-capita-lac.csv")
+for(ii in 1:nrow(dict))
+{
+  cat(paste0("\\item ", dict$variable[ii], ". ", dict$label[ii]), ".", dict$source[ii])
+  cat("\n")
+
+}
+
+# save data
+save(gdp, file = here("data", "gdp.rda"), compress = "xz")
+
+
+
