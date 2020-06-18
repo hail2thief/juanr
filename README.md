@@ -8,6 +8,7 @@ This is an R package of datasets I've used to teach my Latin American politics c
 - Sale of colonial provincial offices in 17th-18th century Peru
 - Varities of Democracy (V-DEM) indicators
 - GDP, imports/exports, population, urbanization, etc.
+- Racial self-identification, skin-tone
 
 
 I hope to keep this going!

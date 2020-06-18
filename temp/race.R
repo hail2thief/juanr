@@ -23,13 +23,13 @@ race =
   select(r_id,
          pais,
          q2,
+         sex,
          etid,
          ed,
-         d5,
-         d6,
          q10new_14,
          colorr) %>%
-  mutate(etid = as_factor(etid))
+  mutate(etid = as_factor(etid),
+         sex = as_factor(sex))
 
 
 # save data
@@ -59,6 +59,7 @@ var_dict =
                                "colorr",
                                "q10new_14",
                                "d5",
+                               "sex",
                                "d6"))
 
 

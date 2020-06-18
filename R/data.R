@@ -255,12 +255,11 @@
 #' \itemize{
 #' \item pais. Country
 #' \item q2. Age.
+#' \item sex. Sex.
 #' \item etid. Ethnicity.
 #' \item ed. Years of schooling.
 #' \item colorr. Skin color (1 = lightest, 11 = darkest; see LAPOP color palette).
 #' \item q10new_14. Monthly household income (0 = no income, 16 = highest income; see labels).
-#' \item d5. Approval of homosexuals' right to run for office (1 = strongly disapprove, 10 = strongly approve).
-#' \item d6. Approval of same-sex couples' right to marry (1 = strongly disapprove, 10 = strongly approve).
 #' }
 #'
 #' @docType data
