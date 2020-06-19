@@ -8,20 +8,20 @@ library(janitor)
 
 # office-sales prices
 # read data
-peru_office =
+colony =
   read_dta("/Users/JuamnTellez/Dropbox/data/Guardado-office-selling/main_part1.dta") %>%
   select(-matches("obispado"), -starts_with("l"),
          -matches("obyear"))
 
 
 # variable dictionary
-labels = peru_office %>% map_chr(~attributes(.)$label)
-var_dict = tibble(original = names(peru_office),
+labels = colony %>% map_chr(~attributes(.)$label)
+var_dict = tibble(original = names(colony),
                   labels = labels)
 
 
 # output
-save(peru_office, file = "data/peru_office.rda")
+save(colony, file = "data/colony.rda")
 
 
 for(ii in 1:nrow(var_dict))
@@ -34,17 +34,17 @@ for(ii in 1:nrow(var_dict))
 
 # office-sales on today
 # read data
-peru_office_dev =
+colony_long =
   read_dta("/Users/JuamnTellez/Dropbox/data/Guardado-office-selling/main_part2_1.dta")
 
 
-labels = peru_office_dev %>% map_chr(~attributes(.)$label)
-var_dict = tibble(original = names(peru_office_dev),
+labels = colony_long %>% map_chr(~attributes(.)$label)
+var_dict = tibble(original = names(colony_long),
                   labels = labels)
 
 
 # output
-save(peru_office_dev, file = "data/peru_office_dev.rda")
+save(colony_long, file = "data/colony_long.rda")
 
 
 for(ii in 1:nrow(var_dict))

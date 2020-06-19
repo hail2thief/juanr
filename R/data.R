@@ -69,11 +69,11 @@
 #'
 #' @docType data
 #' @keywords datasets
-#' @name peru_office
-#' @usage data(peru_office)
+#' @name colony
+#' @usage data(colony)
 #' @format A (tibble) data frame with 632 rows and 36 variables.
 #' @source Guardado, J. (2018). Office-selling, corruption, and long-term development in Peru. American Political Science Review, 112(4), 971-995.
-"peru_office"
+"colony"
 
 
 #' Data on Sale of Provincial Governorships in Peru, 17th-18th century, and Contemporary Outcomes
@@ -175,11 +175,11 @@
 #'
 #' @docType data
 #' @keywords datasets
-#' @name peru_office_dev
-#' @usage data(peru_office_dev)
+#' @name colony_long
+#' @usage data(colony_long)
 #' @format A (tibble) data frame with 14,494 rows and 90 variables.
 #' @source Guardado, J. (2018). Office-selling, corruption, and long-term development in Peru. American Political Science Review, 112(4), 971-995.
-"peru_office_dev"
+"colony_long"
 
 
 #' Varieties of Democracy Indicators for Latin America
@@ -269,3 +269,62 @@
 #' @format A (tibble) data frame with 6,051 rows and 9 variables.
 #' @source Latin American Public Opinion Project.
 "race"
+
+
+#' Data on Land Invasions in Brazil
+#'
+#' Data on land invasions in Brazil, at the municipal level, from Hidalgo et. al (2010).
+#' The variables are as follows:
+#' \itemize{
+#' \item ext_pov. Extreme Poverty (Percent), in 1991
+#' \item landgini. Land Gini
+#' \item occs. Land Occupations, aggregated over 1988-2004
+#' \item logarea. Log (Land Area)
+#' \item logfam. Log (Families in Land Occupations), aggregated over 1988-2004
+#' \item logpop. Log (Population), in 1991
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name invasions
+#' @usage data(invasions)
+#' @format A (tibble) data frame with 4,062 rows and 7 variables.
+#' @source Hidalgo, F. D., Naidu, S., Nichter, S., & Richardson, N. (2010).
+#' Economic determinants of land invasions. The Review of Economics and Statistics, 92(3), 505-523.
+"invasions"
+
+
+#' Data on Income and Household Assets in Honduras, 2018
+#'
+#' Survey data on income, household assets, and other markers of wealth/poverty in Honduras.
+#' The variables are as follows:
+#' \itemize{
+#' \item r1. Television in Home
+#' \item r3. Refrigerator in Home
+#' \item r4. Landline in Home
+#' \item r4a. Cellular Telephone in Home
+#' \item r5. Number of Vehicles at the House
+#' \item r6. Washing Machine in Home
+#' \item r7. Microwave Oven in Home
+#' \item r8. Owns Motorcycle
+#' \item r12. Drinking water in Home
+#' \item r14. Indoor Bathroom in Home
+#' \item r15. Computer in Home
+#' \item r16. Flat Panel TV in Home
+#' \item r18. Internet Service in Home
+#' \item ur. Urban/Rural
+#' \item ed. Years of Schooling
+#' \item q10new_18. Monthly Household Income
+#' \item q14. Intends to Live or Work Abroad
+#' \item fs2. Has Run Out of Food in the Last 3 Months
+#' \item fs8. Has Gone without Meals in the Last 3 Months
+#' \item wf1. Receives Government Assistance
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name wealth
+#' @usage data(wealth)
+#' @format A (tibble) data frame with 1,560 rows and 20 variables.
+#' @source Latin American Public Opinion Project. Honduras, 2018.
+"wealth"

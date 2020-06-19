@@ -8,10 +8,20 @@ This is an R package of datasets I've used to teach my Latin American politics c
 - Sale of colonial provincial offices in 17th-18th century Peru
 - Varities of Democracy (V-DEM) indicators
 - GDP, imports/exports, population, urbanization, etc.
-- Racial self-identification, skin-tone
+- Survey data on Racial self-identification, skin-tone
+- Land invasions in Brazil
+- Survey data on income, household assets, and other measures of poverty
 
+I **hope** to keep updating this project whenever I teach a new iteration of the class. 
 
-I hope to keep this going!
+To install:
+
+```R
+install.packages("devtools")
+library(devtools)
+
+install_github("hail2thief/ladata")
+```
 
 
 ![](temp/mexico.png)
