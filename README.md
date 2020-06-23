@@ -11,8 +11,12 @@ This is an R package of datasets I've used to teach my Latin American politics c
 - Survey data on Racial self-identification, skin-tone
 - Land invasions in Brazil
 - Survey data on income, household assets, and other measures of poverty
+- Survey data on crime, victimization, and beliefs related to punishment
 
 I **hope** to keep updating this project whenever I teach a new iteration of the class. 
+
+**Note**: For all LAPOP data, I just kept original variable names for ease of use. 
+
 
 To install:
 
