@@ -328,3 +328,35 @@
 #' @format A (tibble) data frame with 1,560 rows and 20 variables.
 #' @source Latin American Public Opinion Project. Honduras, 2018.
 "wealth"
+
+
+#' Data on Crime Victimization in Latin America, 2018
+#'
+#' Survey data on experiences with and exposure to crime in select Latin American countries.
+#' The variables are as follows:
+#' \itemize{
+#' \item pais. Country
+#' \item ed. Years of schooling
+#' \item jc10. Coup is justified when crime is high
+#' \item aoj11. Perception of neighborhood insecurity
+#' \item q1. Sex
+#' \item aoj12. Confidence that judiciary will punish the guilty
+#' \item b18. Trust in national police
+#' \item infrax. Police response time
+#' \item e16. Approval of vigilante justice
+#' \item aoj22. How to reduce crime
+#' \item q3c. Religion
+#' \item q5b. Importance of religion
+#' \item q10new_14. Monthly household income
+#' \item etid. Ethnicity
+#' \item vic1ext. Victim of crime in the last 12 months
+#' \item vicbar7. Heard of or witnessed murders in the neighborhood
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name crime
+#' @usage data(crime)
+#' @format A (tibble) data frame with 24,308 rows and 16 variables.
+#' @source Latin American Public Opinion Project. Wave: 2018.
+"crime"
