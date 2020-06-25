@@ -22,9 +22,9 @@ The variables are as follows:
 \item q2. Age.
 \item sex. Sex.
 \item etid. Ethnicity.
-\item ed. Years of schooling.
+\item ed. Years of schooling (0 to 18+ years)
 \item colorr. Skin color (1 = lightest, 11 = darkest; see LAPOP color palette).
-\item q10new_14. Monthly household income (0 = no income, 16 = highest income; see labels).
+\item q10new_14. Monthly household income (0 = no income, 16 = highest income; see LAPOP).
 }
 }
 \keyword{datasets}

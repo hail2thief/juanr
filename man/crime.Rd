@@ -18,18 +18,18 @@ Survey data on experiences with and exposure to crime in select Latin American c
 The variables are as follows:
 \itemize{
 \item pais. Country
-\item ed. Years of schooling
+\item ed. Years of schooling (0 to 18+ years)
 \item jc10. Coup is justified when crime is high
 \item aoj11. Perception of neighborhood insecurity
 \item q1. Sex
 \item aoj12. Confidence that judiciary will punish the guilty
-\item b18. Trust in national police
+\item b18. Trust in national police (1 = not at all, 7 = a lot)
 \item infrax. Police response time
-\item e16. Approval of vigilante justice
+\item e16. Approval of vigilante justice (1 = strongly disapprove, 10 = strongly approve)
 \item aoj22. How to reduce crime
 \item q3c. Religion
 \item q5b. Importance of religion
-\item q10new_14. Monthly household income
+\item q10new_14. Monthly household income (0 = no income, 16 = highest income; see LAPOP)
 \item etid. Ethnicity
 \item vic1ext. Victim of crime in the last 12 months
 \item vicbar7. Heard of or witnessed murders in the neighborhood

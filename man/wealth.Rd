@@ -31,8 +31,8 @@ The variables are as follows:
 \item r16. Flat Panel TV in Home
 \item r18. Internet Service in Home
 \item ur. Urban/Rural
-\item ed. Years of Schooling
-\item q10new_18. Monthly Household Income
+\item ed. Years of Schooling (0 to 18+ years)
+\item q10new_18. Monthly Household Income (0 = no income, 16 = highest income; see LAPOP).
 \item q14. Intends to Live or Work Abroad
 \item fs2. Has Run Out of Food in the Last 3 Months
 \item fs8. Has Gone without Meals in the Last 3 Months
