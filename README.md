@@ -15,7 +15,7 @@ This is an R package of datasets I've used to teach my Latin American politics c
 
 I **hope** to keep updating this project whenever I teach a new iteration of the class. 
 
-**Note**: For all LAPOP data, I just kept original variable names for ease of use. 
+**Note**: For best experience, load `tibble` or `tidyverse` while using data. 
 
 
 To install:
