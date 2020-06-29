@@ -28,4 +28,4 @@ install_github("hail2thief/ladata")
 ```
 
 
-![](temp/mexico.png)
+![](temp/ladata-hex.png)
