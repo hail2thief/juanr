@@ -3,47 +3,21 @@
 
 <img src="temp/sticker.png" width="30%">
 
+A collection of datasets I use for teaching. Mostly political science,
+economics + toy data from other data science courses.
+
 ## Installation
 
 You can install the development version of `{juanr}` from Github via the
-`{devtools}` package. I suppose using the `{remotes}` package would work
-as well.
+`{devtools}` package.
 
 ``` r
-devtools::install_github("svmiller/juanr")
+devtools::install_github("hail2thief/juanr")
 ```
 
-## Usage
+## Contents
 
-The data set already has a lot to offer those who might be curious about
-its contents. You can do this to see what is in it.
-
-``` r
-data(package = "juanr")
-```
-
-The ensuing output will look like this.
-
-| **Object Name** | **Title/Description**                                                                          |
-|:----------------|:-----------------------------------------------------------------------------------------------|
-| `bot`           | American Voter Bot data                                                                        |
-| `casual`        | iCasualties data                                                                               |
-| `colony_long`   | Data on Sale of Provincial Governorships in Peru, 17th-18th century, and Contemporary Outcomes |
-| `colony`        | Data on Sale of Provincial Governorships in Peru, 17th-18th century                            |
-| `crime`         | Data on Crime Victimization in Latin America, 2018                                             |
-| `elections`     | US County Election Data                                                                        |
-| `gdp`           | Economic and Population Panel Data for Latin America                                           |
-| `informal`      | World Bank Informality Data                                                                    |
-| `invasions`     | Data on Land Invasions in Brazil                                                               |
-| `movies`        | Movies data                                                                                    |
-| `pokemon`       | Pokemon data                                                                                   |
-| `race`          | Race and Colorism Survey Data from LAPOP                                                       |
-| `vdem`          | Varieties of Democracy Indicators for Latin America                                            |
-| `wealth`        | Data on Income and Household Assets in Honduras, 2018                                          |
-
-Here is a simple scraping job to provide more information (by way of the
-`description` field in the associated R Documentation file). I include
-these descriptions as a vignette as well.
+Here’s the data I’ve got in the package so far:
 
 | **Object Name** | **Description**                                                                                                                                                                                                                                                                             |
 |:----------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
