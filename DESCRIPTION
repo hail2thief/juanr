@@ -1,14 +1,14 @@
-Package: ladata
+Package: juanr
 Type: Package
-Title: Data Sets for Teaching Latin American Politics
+Title: Data Sets for Teaching Data Science
 Version: 0.1.0
 Authors@R: person("Juan", "Tellez", email = "juan.f.tellez@gmail.com",
                       role = c("aut", "cre"))
 Maintainer: Juan F. Tellez <juan.f.tellez@gmail.com>
-Description: A collection of data sets on political and economic topics in Latin America. Intended for teaching purposes.
+Description: A collection of data sets on data science, political science, and economics that I use for teaching. 
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
 Depends: R (>= 3.5)
 Imports: tibble

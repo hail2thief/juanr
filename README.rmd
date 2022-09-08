@@ -1,0 +1,68 @@
+---
+output: github_document
+---
+
+# `juanr`: Data for Teaching
+
+
+<img src="temp/sticker.png" width="30%">
+
+## Installation
+
+
+You can install the development version of `{juanr}` from Github via the `{devtools}` package. I suppose using the `{remotes}` package would work as well.
+
+```r
+devtools::install_github("svmiller/juanr")
+```
+
+## Usage
+
+The data set already has a lot to offer those who might be curious about its contents. You can do this to see what is in it.
+
+```r
+data(package = "juanr")
+```
+
+The ensuing output will look like this.
+
+```{r, echo=F, eval=T, message=F, warning=F}
+alldata <- data(package = "juanr")
+library(knitr)
+library(tibble)
+library(dplyr)
+
+object_name <- paste0("`",alldata$results[, "Item"],"`")
+
+tibble(`**Object Name**` = object_name,
+       `**Title/Description**` = alldata$results[, "Title"]) %>%
+  arrange(`**Object Name**`) %>%
+  kable(., format="markdown")
+```
+
+Here is a simple scraping job to provide more information (by way of the `description` field in the associated R Documentation file). I include these descriptions as a vignette as well.
+
+```{r, echo=F, eval=T}
+getdescript <- function(package){
+  db = tools::Rd_db(package)
+  db <- tools::Rd_db(package)
+  descript <- lapply(db,function(x) {
+    tags <- tools:::RdTags(x)
+    if("\\description" %in% tags){
+      out <- paste(unlist(x[[which(tags=="\\description")]][[2]]),collapse="")
+    }
+    else
+      out <- NULL
+    invisible(out)
+  })
+  gsub("\n","",unlist(descript))
+}
+
+descripts <- getdescript("juanr")
+
+tibble(`**Object Name**` = object_name,
+       `**Description**` = descripts)  %>%
+  arrange(`**Object Name**`) %>%
+  knitr::kable(., format="markdown")
+
+```

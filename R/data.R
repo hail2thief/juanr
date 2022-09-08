@@ -360,3 +360,150 @@
 #' @format A (tibble) data frame with 24,308 rows and 16 variables.
 #' @source Latin American Public Opinion Project. Wave: 2018.
 "crime"
+
+
+#' Movies data
+#'
+#' A sample of movies and their characteristics from IMDB (1950-2016).
+#' The variables are as follows:
+#' \itemize{
+#' \item title. Name of the movie.
+#' \item year. Year the movie was released.
+#' \item decade. Decade the movie was released (factor).
+#' \item director. Name of the movie's director.
+#' \item genre1. The movie's first listed genre.
+#' \item genre2. The movie's second listed genre.
+#' \item duration. Duration of movie (in minutes).
+#' \item gross. How much the movie grossed in theaters (in USD).
+#' \item budget. How much the movie cost to make (in USD).
+#' \item rating. The movie's IMDB rating (0-10).
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name movies
+#' @usage data(movies)
+#' @format A (tibble) data frame with 4,139 rows and 10 variables.
+#' @source IMDB via Kaggle.
+"movies"
+
+
+#' Pokemon data
+#'
+#' A dataset containing the characteristics of 800+ Pokemon.
+#' The variables are as follows:
+#' \itemize{
+#' \item type1. Pokemon primary type.
+#' \item type2. Pokemon secondary type.
+#' \item height_m. Heigh in meters.
+#' \item weight_kg. Weight in kilometers.
+#' \item capture_rate. Measure of how easy it is to capture the Pokemon. Higher catch rates mean that the Pokémon is easier to catch, up to a maximum of 255.
+#' \item hp. Determines how much damage a Pokémon can receive before fainting.
+#' \item attack. Determines the power of a physical move.
+#' \item defense. Determines how much damage a Pokemon receives when it is hit with a physical move.
+#' \item sp_attack. Determines how much damage a Pokemon deals when using a special move.
+#' \item sp_defense. Determines how much damage a Pokemon receives when it is hit with a special move.
+#' \item speed. Determines the order of Pokémon that can act in battle.
+#' \item generation. A grouping of the Pokémon games that separates them based on the Pokémon they include.
+#' \item is_legendary. Whether the Pokemon is legendary (1 = yes, 0 = no).
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name pokemon
+#' @usage data(pokemon)
+#' @format A (tibble) data frame with 801 rows and 14 variables.
+#' @source Kaggle.
+"pokemon"
+
+
+#' iCasualties data
+#'
+#' Data on American soldier fatalities during the US invasion of Iraq and Afghanistan, collected by iCasualties. Note: Data here may not reflect most updated numbers.
+#' The variables are as follows:
+#' \itemize{
+#' \item date. Date of death.
+#' \item name. Name of soldier.
+#' \item rank. Soldier's rank.
+#' \item branch. Branch of the army, navy, air force, or other entity that soldier was part ofc.
+#' \item age. Age at time of death.
+#' \item country. Country where soldier died.
+#' \item province. Province where soldier died.
+#' \item where. City or locale where soldier died.
+#' \item source. Source of death (friendly vs hostile).
+#' \item cause. Cause of death.
+#' \item state. Home state of soldier.
+#' \item city. Home city/town of soldier.
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name casual
+#' @usage data(casual)
+#' @format A (tibble) data frame with 7,029 rows and 12 variables.
+#' @source iCasualties.org
+"casual"
+
+
+#' American Voter Bot data
+#'
+#' A sample of respondents from the Cooperative Election Survey. Inspired by the Twitter account "American Voter Bot".
+#' The variables are as follows:
+#' \itemize{
+#' \item state. Respondent home state.
+#' \item sex. Respondent sex.
+#' \item age. Respondent age.
+#' \item educ. Respondent highest educational attainment.
+#' \item race. Respondent race.
+#' \item pid7. Respondent ideological self-placement (7-point scale).
+#' \item ideo5. Respondent ideological self-placement (5-point scale).
+#' \item religion. Respondent religion.
+#' \item votechoice. Respondent vote choice during 2020 election.
+#' \item hispanic. Is respondent Hispanic?
+#' \item know_governor. Respondent answer to which party they believe their current governor belongs to. A measure of political knowledge.
+#' \item conceal. Support or oppose: "Make it easier for people to obtain concealed carry permits?"
+#' \item prochoice. Support or oppose: "Always allow a woman to obtain an abortion as a matter of choice."
+#' \item cleanair. Support or oppose: "Strengthen the Environmental Protection Agency enforcement of the Clean Air Act and Clean Water Act even if it costs U.S. jobs".
+#' \item wall. Support or oppose: "Increase spending on border security by $25 billion, including building a wall between the U.S. and Mexico."
+#' \item mandmin. Support or oppose: "Eliminate mandatory minimum sentences for non- violent drug offenders."
+#' \item aca. Support or oppose: "Repeal the entire Affordable Care Act."
+#' \item minwage. Support or oppose: "Raise the minimum wage to $15 an hour."
+#' \item newsint. How often Respondent says they follow what's going on in government and public affairs.
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name bot
+#' @usage data(bot)
+#' @format A (tibble) data frame with 61,000 rows and 19 variables.
+#' @source 2020 Cooperative Election Survey.
+"bot"
+
+#' US County Election Data
+#'
+#' County-level data with electoral results from 2012, 2016, and 2020. Note: some 2020 results based on estimates.
+#' The variables are as follows:
+#' \itemize{
+#' \item fips. County FIPS ID.
+#' \item name. Name of county.
+#' \item state. State.
+#' \item census_region. Region state belongs to according to Census.
+#' \item pop. County population (2014).
+#' \item female. Percent of county that is female (2013).
+#' \item white. Percent of county that is white (2013).
+#' \item black. Percent of county that is black (2013).
+#' \item travel_time. Mean travel time to work (minutes), workers age 16+, 2009-2013.
+#' \item land_area. County land area in square miles, 2010.
+#' \item hh_income. Median household income, 2009-2013.
+#' \item per_PARTY_2012. PARTY presidential vote, proportion, 2012.
+#' \item per_PARTY_2016. PARTY presidential vote, proportion, 2016.
+#' \item per_PARTY_2020. PARTY presidential vote, proportion, 2020.
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name elections
+#' @usage data(elections)
+#' @format A (tibble) data frame with 3,152 rows and 17 variables.
+#' @source Mostly a port of socviz::county_data.
+"elections"
