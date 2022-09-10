@@ -26,7 +26,7 @@
 
 #' Data on Sale of Provincial Governorships in Peru, 17th-18th century
 #'
-#' A cross-sectional dataset containing information on the sale of provincial governorships by the Spanish Crown in #' Peru during the 17th and 18th century, as well as province-level demographic and economic data. The dataset is  #' from Guardado (2018). The variables are as follows:
+#' A cross-sectional dataset containing information on the sale of provincial governorships by the Spanish Crown in #' Peru during the 17th and 18th century, as well as province-level demographic and economic data. The dataset is ' from Guardado (2018). The variables are as follows:
 #'
 #' \itemize{
 #' \item audiencia. Spanish Audiencia.
@@ -332,25 +332,25 @@
 
 #' Data on Crime Victimization in Latin America, 2018
 #'
-#' Survey data on experiences with and exposure to crime in select Latin American countries.
+#' 2018 LAPOP survey of experiences with and exposure to crime in select Latin American countries.
 #' The variables are as follows:
 #' \itemize{
-#' \item pais. Country
-#' \item ed. Years of schooling (0 to 18+ years)
-#' \item jc10. Coup is justified when crime is high
-#' \item aoj11. Perception of neighborhood insecurity
-#' \item q1. Sex
-#' \item aoj12. Confidence that judiciary will punish the guilty
-#' \item b18. Trust in national police (1 = not at all, 7 = a lot)
-#' \item infrax. Police response time
-#' \item e16. Approval of vigilante justice (1 = strongly disapprove, 10 = strongly approve)
-#' \item aoj22. How to reduce crime
-#' \item q3c. Religion
-#' \item q5b. Importance of religion
-#' \item q10new_14. Monthly household income (0 = no income, 16 = highest income; see LAPOP)
-#' \item etid. Ethnicity
-#' \item vic1ext. Victim of crime in the last 12 months
-#' \item vicbar7. Heard of or witnessed murders in the neighborhood
+#' \item pais. Country.
+#' \item ed. Respondent years of schooling (0 to 18+ years).
+#' \item jc10. Agreement with: "a coup is justified when crime is high".
+#' \item aoj11. Perception of neighborhood insecurity.
+#' \item q1. Respondent sex.
+#' \item aoj12. Confidence that judiciary will punish the guilty.
+#' \item b18. Trust in national police (1 = not at all, 7 = a lot).
+#' \item infrax. Perception of police response time.
+#' \item e16. Approval of vigilante justice (1 = strongly disapprove, 10 = strongly approve).
+#' \item aoj22. Opinion on the best approach to reduce crime.
+#' \item q3c. Respondent religion.
+#' \item q5b. Importance of religion to respondent.
+#' \item q10new_14. Monthly household income (0 = no income, 16 = highest income; see LAPOP codebook).
+#' \item etid. Ethnicity.
+#' \item vic1ext. Was respondent a victim of a crime in the last 12 months? (1 = yes, 0 = no).
+#' \item vicbar7. Have there been any murders in the last 12 months in your neighborhood? (1 = yes, 0 = no).
 #' }
 #'
 #' @docType data
@@ -417,7 +417,7 @@
 "pokemon"
 
 
-#' iCasualties data
+#' iCasualties data on US fatalities in Iraq and Afghanistan
 #'
 #' Data on American soldier fatalities during the US invasion of Iraq and Afghanistan, collected by iCasualties. Note: Data here may not reflect most updated numbers.
 #' The variables are as follows:
@@ -507,3 +507,214 @@
 #' @format A (tibble) data frame with 3,152 rows and 17 variables.
 #' @source Mostly a port of socviz::county_data.
 "elections"
+
+#' Interstate Trade
+#'
+#' State-year level Correlates of War data focusing on international trade, including imports, exports, and IGO membership.
+#' The variables are as follows:
+#' \itemize{
+#' \item country. Name of country.
+#' \item year. Year.
+#' \item imports. Total imports of the state in current million USD.
+#' \item exports. Total exports of the state in current million USD.
+#' \item gdp. Estimated GDP in 2011 USD.
+#' \item pop. Estimated population size.
+#' \item land_borders. Number of countries bordered by land.
+#' \item sea_borders. Number of countries bordered by sea.
+#' \item min_cap_dist. Mininum distance to a foreign capital, in kilometers.
+#' \item sum_igos. The sum of International Governmental Organizations for which the state is a member of any kind in a given year.
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name trade
+#' @usage data(trade)
+#' @format A (tibble) data frame with 4,263 rows and 13 variables.
+#' @source From the `peacesciencer` package.
+"trade"
+
+#' Conflict onset
+#'
+#' State-year level UCDP data focusing on conflict onset.
+#' The variables are as follows:
+#' \itemize{
+#' \item country. Name of country.
+#' \item year. Year.
+#' \item onset. Did country experience at least one conflict onset this year? (1 = yes, 0 = no).
+#' \item imports. Total imports of the state in current million USD.
+#' \item exports. Total exports of the state in current million USD.
+#' \item polyarchy. the Varieties of Democracy "polyarchy" estimate of a country's quality of electoral democracy.
+#' \item milex. An estimate of military expenditures (in thousands).
+#' \item milper. An estimate of the size of military personnel (in thousands) for the state.
+#' \item The Composite Index of National Capability ("CINC") score. Roughly: a country's world share of military capability in that year.
+#' \item gdp. Estimated GDP in 2011 USD.
+#' \item pop. Estimated population size.
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name conflict
+#' @usage data(conflict)
+#' @format A (tibble) data frame with 11,493 rows and 11 variables.
+#' @source From the `peacesciencer` package.
+"conflict"
+
+
+#' US feeling thermometer data
+#'
+#' Feeling thermometer survey data on a variety of social groups in the USA. From from the July 2017 "Views of the Electorate" Research Survey.
+#' The variables are as follows:
+#' \itemize{
+#' \item birth_year. Year respondent was born.
+#' \item sex. Sex of respondent.
+#' \item race. Race of respondent.
+#' \item party_id. Respondent party identification (3 point).
+#' \item educ. Highest level of educational attainment.
+#' \item ft_GROUP. Feeling thermometer rating for GROUP (0 = feel very "cold" towards GROUP, 100 = feel very "warm" towards GROUP).
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name therm
+#' @usage data(therm)
+#' @format A (tibble) data frame with 4,986 rows and 21 variables.
+#' @source July 2017 "Views of the Electorate" Research Survey.
+"therm"
+
+#' Ethnicity, insurgency, and civil war dataset
+#'
+#' Replication data from the classic Fearon and Laitin (2003) study on the causes of civil wars.
+#' The variables are as follows:
+#' \itemize{
+#' \item country. Name of country.
+#' \item year. Year.
+#' \item onset. Did country experience civil war onset this year? (1 = yes, 0 = no).
+#' \item pop. Population, lagged one year.
+#' \item polity2. Country's Polity2 score that year.
+#' \item gdp_cap. GDP per capita, lagged one year, in thousands.
+#' \item mtnest. Percent of country that is "mountainous".
+#' \item oil. Does the country's oil exports exceed one third of export revenues? (1 = yes, 0 = no).
+#' \item ef. Ethnic fractionalization index (the probability that two randomly drawn individuals in a country are from different ethnolinguistic group).
+#' \item numlang.The number of distinct languages spoken by groups exceeding 1% the country's population.
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name fearon
+#' @usage data(fearon)
+#' @format A (tibble) data frame with 6,610 rows and 10 variables.
+#' @source From Fearon and Laitin (2003).
+"fearon"
+
+
+
+#' Dynamics of violence in civil war dataset
+#'
+#' Replication data from Kalyvas and Kocher (2009) on the characteristics of the Hamlet Evaluation System during the Vietnam War.
+#' The variables are as follows:
+#' \itemize{
+#' \item hamlet_id. 9-digit Hamlet Evaluation System identifier.
+#' \item month. Month.
+#' \item selective_terror. Did Vietcong use selective violence? (1 = yes, 0 = no).
+#' \item control. Degree of control between state and rebels in the hamlet.
+#' \item bombs. Number of bomb sorties in hamlet.
+#' \item urban. Is hamlet mostly urban? (1 = yes, 0 = no).
+#' \item pop. Hamlet population.
+#' \item border. Distance to closest international border.
+#' \item dev_index. Development index (cannot find details on what this means).
+#' \item buddhist. Predominantly Buddhist hamlet? (1 = yes, 0 = no).
+#' \item vietnamese. Predominantly Vietnamese hamlet? (1 = yes, 0 = no).
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name vietnam
+#' @usage data(vietnam)
+#' @format A (tibble) data frame with 71,378 rows and 11 variables.
+#' @source From Kalyvas and Kocher(2009).
+"vietnam"
+
+
+#' UCDP Geo-referenced Event Database
+#'
+#' A sample of the UCDP GED (version 21.1), information on violent events including casualty estimates.
+#' The variables are as follows:
+#' \itemize{
+#' \item id. Unique event identifer.
+#' \item year. Year event began.
+#' \item month. Month event began.
+#' \item day. Day event began.
+#' \item country. Country of event.
+#' \item type_of_violence. UCDP violence type.
+#' \item conflict_name. Name of conflict.
+#' \item side_a. Side A. See UCDP codebook.
+#' \item side_b. Side B. See UCDP codebook.
+#' \item longitude. Longitude.
+#' \item latitude. Latitude.
+#' \item low_death. Low estimate of number of deaths.
+#' \item best_death. Best estimate of number of deaths.
+#' \item high_death. High estimate of number of deaths.
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name ged
+#' @usage data(ged)
+#' @format A (tibble) data frame with 261,864 rows and 14 variables.
+#' @source UCDP GED Version 2.11.
+"ged"
+
+#' Data on state leaders, mostly from the Leader Experience, Attribute, and Decision (LEAD) data set.
+#'
+#' A sample of the UCDP GED (version 21.1), information on violent events including casualty estimates.
+#' The variables are as follows:
+#' \itemize{
+#' \item country. Country.
+#' \item gwcode. Gleditsch and Ward country code.
+#' \item leader. Name of leader.
+#' \item gender. Gender of leader.
+#' \item year. Year.
+#' \item yr_office. Years in office.
+#' \item age. Age of leader.
+#' \item edu. Educational attainment of leader.
+#' \item mil_service. Does leader have military service? (1 = yes, 0 = no).
+#' \item combat. Does leader have combat experience? (1 = yes, 0 = no).
+#' \item rebel. Does leader have experience as part of a rebellion? (1 = yes, 0 = no).
+#' \item yrs_exp. Previous years of experience in politics before becoming a leader.
+#' \item phys_health. Does leader have physical health issues? (1 = yes, 0 = no).
+#' \item mental_health. Does leader have mental health issues? (1 = yes, 0 = no).
+#' \item will_force. Estimate of leader's willingness to use force.
+#' \item will_force_sd. Standard deviation of estimate of leader's willingness to use force.
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name leader
+#' @usage data(leader)
+#' @format A (tibble) data frame with 3,409 rows and 12 variables.
+#' @source `peacesciencer`.
+"leader"
+
+
+#' Data on CO2 and Greenhouse Gas Emissions by Our World in Data
+#'
+#' Country-year data from "Our World in Data" on CO2 and Greenhouse gas emissions.
+#' The variables are as follows:
+#' \itemize{
+#' \item country. Name of country.
+#' \item year. Year.
+#' \item population. Population of country.
+#' \item gdp. Gross domestic product (2011).
+#' \item co2. Annual production-based emissions of carbon dioxide (CO2), measured in million tonnes. This is based on territorial emissions, which do not account for emissions embedded in traded goods.
+#' \item coal_co2. Annual production-based emissions of carbon dioxide (CO2) from coal, measured in million tonnes. This is based on territorial emissions, which do not account for emissions embedded in traded goods.
+#' \item cumulative_co2. Cumulative production-based emissions of carbon dioxide (CO2) since the first year of data availability, measured in million tonnes. This is based on territorial emissions, which do not account for emissions embedded in traded goods.
+#' \item methane. Total methane emissions including land-use change and forestry, measured in million tonnes of carbon dioxide-equivalents.
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name emission
+#' @usage data(emission)
+#' @format A (tibble) data frame with 21,913 rows and 8 variables.
+#' @source Our World in Data. https://github.com/owid/co2-data
+"emission"

@@ -14,25 +14,25 @@ Latin American Public Opinion Project. Wave: 2018.
 data(crime)
 }
 \description{
-Survey data on experiences with and exposure to crime in select Latin American countries.
+2018 LAPOP survey of experiences with and exposure to crime in select Latin American countries.
 The variables are as follows:
 \itemize{
-\item pais. Country
-\item ed. Years of schooling (0 to 18+ years)
-\item jc10. Coup is justified when crime is high
-\item aoj11. Perception of neighborhood insecurity
-\item q1. Sex
-\item aoj12. Confidence that judiciary will punish the guilty
-\item b18. Trust in national police (1 = not at all, 7 = a lot)
-\item infrax. Police response time
-\item e16. Approval of vigilante justice (1 = strongly disapprove, 10 = strongly approve)
-\item aoj22. How to reduce crime
-\item q3c. Religion
-\item q5b. Importance of religion
-\item q10new_14. Monthly household income (0 = no income, 16 = highest income; see LAPOP)
-\item etid. Ethnicity
-\item vic1ext. Victim of crime in the last 12 months
-\item vicbar7. Heard of or witnessed murders in the neighborhood
+\item pais. Country.
+\item ed. Respondent years of schooling (0 to 18+ years).
+\item jc10. Agreement with: "a coup is justified when crime is high".
+\item aoj11. Perception of neighborhood insecurity.
+\item q1. Respondent sex.
+\item aoj12. Confidence that judiciary will punish the guilty.
+\item b18. Trust in national police (1 = not at all, 7 = a lot).
+\item infrax. Perception of police response time.
+\item e16. Approval of vigilante justice (1 = strongly disapprove, 10 = strongly approve).
+\item aoj22. Opinion on the best approach to reduce crime.
+\item q3c. Respondent religion.
+\item q5b. Importance of religion to respondent.
+\item q10new_14. Monthly household income (0 = no income, 16 = highest income; see LAPOP codebook).
+\item etid. Ethnicity.
+\item vic1ext. Was respondent a victim of a crime in the last 12 months? (1 = yes, 0 = no).
+\item vicbar7. Have there been any murders in the last 12 months in your neighborhood? (1 = yes, 0 = no).
 }
 }
 \keyword{datasets}
