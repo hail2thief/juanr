@@ -14,7 +14,7 @@ The Database on Ideology, Money in Politics, and Elections (DIME).
 data(bonica)
 }
 \description{
-Candidate level data on money raised, spent, and other variables in political campaigns, from the Database on Ideology, Money in Politics, and Elections (DIME).
+Candidate level data on money raised, spent, and other stuff during political campaigns, from the Database on Ideology, Money in Politics, and Elections (DIME).
 The variables are as follows:
 \itemize{
 \item cycle. The election cycle/year, includes: 2012, 2016, 2018.

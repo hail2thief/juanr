@@ -15,7 +15,8 @@ data(vdem)
 }
 \description{
 A dataset from the Varieties of Democracy (V-DEM) project that characterizes
-the different dimensions of democracy across Latin America. The variables are as follows:
+the different dimensions of democracy across Latin America.
+The variables are as follows:
 }
 \details{
 \itemize{

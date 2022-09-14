@@ -714,6 +714,7 @@
 #' \item gdp. Gross domestic product (2011).
 #' \item co2. Annual production-based emissions of carbon dioxide (CO2), measured in million tonnes. This is based on territorial emissions, which do not account for emissions embedded in traded goods.
 #' \item coal_co2. Annual production-based emissions of carbon dioxide (CO2) from coal, measured in million tonnes. This is based on territorial emissions, which do not account for emissions embedded in traded goods.
+#' \item total_ghg. Total greenhouse gas emissions including land-use change and forestry, measured in million tonnes of carbon dioxide-equivalents.
 #' \item cumulative_co2. Cumulative production-based emissions of carbon dioxide (CO2) since the first year of data availability, measured in million tonnes. This is based on territorial emissions, which do not account for emissions embedded in traded goods.
 #' \item methane. Total methane emissions including land-use change and forestry, measured in million tonnes of carbon dioxide-equivalents.
 #' }

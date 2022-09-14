@@ -15,7 +15,8 @@ data(informal)
 }
 \description{
 A panel dataset containing data from World Bank indicators on urbanization and
-informality in select Latin America and the Caribbean countries (1960-2019). The variables are as follows:
+informality in select Latin America and the Caribbean countries (1960-2019).
+The variables are as follows:
 }
 \details{
 \itemize{
