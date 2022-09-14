@@ -3,7 +3,7 @@
 \docType{data}
 \name{vietnam}
 \alias{vietnam}
-\title{Replication data from Kalyvas and Kocher (2009)}
+\title{Dynamics of violence in civil war dataset}
 \format{
 A (tibble) data frame with 71,378 rows and 11 variables.
 }

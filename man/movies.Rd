@@ -5,7 +5,7 @@
 \alias{movies}
 \title{Movies data}
 \format{
-A (tibble) data frame with 4,139 rows and 10 variables.
+A (tibble) data frame with 4,139 rows and 13 variables.
 }
 \source{
 IMDB via Kaggle.
@@ -14,7 +14,7 @@ IMDB via Kaggle.
 data(movies)
 }
 \description{
-A sample of movies and their characteristics from IMDB (1950-2016).
+A sample of movies and their characteristics from IMDB (1910-2016).
 The variables are as follows:
 \itemize{
 \item title. Name of the movie.
@@ -22,11 +22,14 @@ The variables are as follows:
 \item decade. Decade the movie was released (factor).
 \item director. Name of the movie's director.
 \item genre1. The movie's first listed genre.
-\item genre2. The movie's second listed genre.
+\item genre2. The movie's second listed genre (if any).
+\item genre3. The movie's third listed genre (if any).
 \item duration. Duration of movie (in minutes).
 \item gross. How much the movie grossed in theaters (in USD).
 \item budget. How much the movie cost to make (in USD).
-\item rating. The movie's IMDB rating (0-10).
+\item imbd_score. The movie's average IMDB rating (0-10).
+\item color. Whether the movie is color or black and white.
+\item content_rating. The movie's parental advisory rating.
 }
 }
 \keyword{datasets}

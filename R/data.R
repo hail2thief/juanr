@@ -1,7 +1,8 @@
 #' World Bank Informality Data
 #'
 #' A panel dataset containing data from World Bank indicators on urbanization and
-#' informality in select Latin America and the Caribbean countries (1960-2019). The variables are as follows:
+#' informality in select Latin America and the Caribbean countries (1960-2019).
+#' The variables are as follows:
 #'
 #' \itemize{
 #' \item country. Country name.
@@ -26,7 +27,8 @@
 
 #' Data on Sale of Provincial Governorships in Peru, 17th-18th century
 #'
-#' A cross-sectional dataset containing information on the sale of provincial governorships by the Spanish Crown in #' Peru during the 17th and 18th century, as well as province-level demographic and economic data. The dataset is ' from Guardado (2018). The variables are as follows:
+#' A cross-sectional dataset containing information on the sale of provincial governorships by the Spanish Crown in #' Peru during the 17th and 18th century, as well as province-level demographic and economic data. The dataset is ' from Guardado (2018).
+#' The variables are as follows:
 #'
 #' \itemize{
 #' \item audiencia. Spanish Audiencia.
@@ -78,7 +80,8 @@
 
 #' Data on Sale of Provincial Governorships in Peru, 17th-18th century, and Contemporary Outcomes
 #'
-#' A dataset linking information on the sale of provincial governorships by the Spanish Crown in Peru during the 17th and 18th century with contemporary development outcomes. The dataset is from Guardado (2018). The variables are as follows:
+#' A dataset linking information on the sale of provincial governorships by the Spanish Crown in Peru during the 17th and 18th century with contemporary development outcomes. The dataset is from Guardado (2018).
+#' The variables are as follows:
 #'
 #' \itemize{
 #' \item provincia. colonial province name.
@@ -185,7 +188,8 @@
 #' Varieties of Democracy Indicators for Latin America
 #'
 #' A dataset from the Varieties of Democracy (V-DEM) project that characterizes
-#' the different dimensions of democracy across Latin America. The variables are as follows:
+#' the different dimensions of democracy across Latin America.
+#' The variables are as follows:
 #'
 #' \itemize{
 #' \item v2x_polyarchy. To what extent is the ideal of electoral democracy in its fullest sense achieved?.
@@ -364,7 +368,7 @@
 
 #' Movies data
 #'
-#' A sample of movies and their characteristics from IMDB (1950-2016).
+#' A sample of movies and their characteristics from IMDB (1910-2016).
 #' The variables are as follows:
 #' \itemize{
 #' \item title. Name of the movie.
@@ -372,18 +376,21 @@
 #' \item decade. Decade the movie was released (factor).
 #' \item director. Name of the movie's director.
 #' \item genre1. The movie's first listed genre.
-#' \item genre2. The movie's second listed genre.
+#' \item genre2. The movie's second listed genre (if any).
+#' \item genre3. The movie's third listed genre (if any).
 #' \item duration. Duration of movie (in minutes).
 #' \item gross. How much the movie grossed in theaters (in USD).
 #' \item budget. How much the movie cost to make (in USD).
-#' \item rating. The movie's IMDB rating (0-10).
+#' \item imbd_score. The movie's average IMDB rating (0-10).
+#' \item color. Whether the movie is color or black and white.
+#' \item content_rating. The movie's parental advisory rating.
 #' }
 #'
 #' @docType data
 #' @keywords datasets
 #' @name movies
 #' @usage data(movies)
-#' @format A (tibble) data frame with 4,139 rows and 10 variables.
+#' @format A (tibble) data frame with 4,139 rows and 13 variables.
 #' @source IMDB via Kaggle.
 "movies"
 
@@ -713,8 +720,37 @@
 #'
 #' @docType data
 #' @keywords datasets
-#' @name emission
-#' @usage data(emission)
+#' @name climate
+#' @usage data(climate)
 #' @format A (tibble) data frame with 21,913 rows and 8 variables.
 #' @source Our World in Data. https://github.com/owid/co2-data
-"emission"
+"climate"
+
+
+#' Data on Campaign Finance from the Database on Ideology, Money in Politics, and Elections (DIME).
+#'
+#' Candidate level data on money raised, spent, and other stuff during political campaigns, from the Database on Ideology, Money in Politics, and Elections (DIME).
+#' The variables are as follows:
+#' \itemize{
+#' \item cycle. The election cycle/year, includes: 2012, 2016, 2018.
+#' \item name. Name of candidate.
+#' \item party. Party of candidate.
+#' \item dwnom1. First dimension common-space DW-NOMINATE score. Based on joint scaling of the 1st to the 112th Congresses. More negative = more liberal, more positive = more conservative.
+#' \item state. State.
+#' \item district. District identifier.
+#' \item seat. Senate or House election.
+#' \item incumbent. Whether candidate is an incumbent or a challenger.
+#' \item gender. Gender of candidate.
+#' \item num_distinct_donors. Number of district donors that gave to the candidate in the election cycle.
+#' \item total_receipts. Total dollars raised by candidate during an election cycle.
+#' \item contribs_from_candidate. Total receipts from candidate contributions.
+#' \item total_disbursements. Total campaign disbursements (in dollars) for the given election cycle.
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name bonica
+#' @usage data(bonica)
+#' @format A (tibble) data frame with 9,787 rows and 13 variables.
+#' @source The Database on Ideology, Money in Politics, and Elections (DIME).
+"bonica"

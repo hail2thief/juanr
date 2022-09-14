@@ -3,7 +3,7 @@
 \docType{data}
 \name{fearon}
 \alias{fearon}
-\title{Fearon and Laitin (2003) replication data}
+\title{Ethnicity, insurgency, and civil war dataset}
 \format{
 A (tibble) data frame with 6,610 rows and 10 variables.
 }

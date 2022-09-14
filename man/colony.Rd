@@ -14,7 +14,7 @@ Guardado, J. (2018). Office-selling, corruption, and long-term development in Pe
 data(colony)
 }
 \description{
-A cross-sectional dataset containing information on the sale of provincial governorships by the Spanish Crown in #' Peru during the 17th and 18th century, as well as province-level demographic and economic data. The dataset is  #' from Guardado (2018). The variables are as follows:
+A cross-sectional dataset containing information on the sale of provincial governorships by the Spanish Crown in #' Peru during the 17th and 18th century, as well as province-level demographic and economic data. The dataset is ' from Guardado (2018). The variables are as follows:
 }
 \details{
 \itemize{

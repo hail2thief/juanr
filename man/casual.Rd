@@ -3,7 +3,7 @@
 \docType{data}
 \name{casual}
 \alias{casual}
-\title{iCasualties data}
+\title{iCasualties data on US fatalities in Iraq and Afghanistan}
 \format{
 A (tibble) data frame with 7,029 rows and 12 variables.
 }
