@@ -445,11 +445,11 @@
 #'
 #' @docType data
 #' @keywords datasets
-#' @name casual
-#' @usage data(casual)
+#' @name fatal
+#' @usage data(fatal)
 #' @format A (tibble) data frame with 7,029 rows and 12 variables.
 #' @source iCasualties.org
-"casual"
+"fatal"
 
 
 #' American Voter Bot data
