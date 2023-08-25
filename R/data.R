@@ -1,3 +1,92 @@
+#' National Database of Childcare Prices
+#'
+#' A dataset that provides information on childcare prices and other demographics at the county-year level in the United States. Childcare prices are based on market rate surveys.
+#' The variables are as follows:
+#'
+#' \itemize{
+#' \item state. State.
+#' \item county. County.
+#' \item fips. Five-digit number that uniquely identifies the county in a state.
+#' \item year. Year the data collection began for the market rate survey.
+#' \item unem_rate. Unemployment rate of the population aged 16 years old or older (%).
+#' \item poverty_rate. Poverty rate for families.
+#' \item median_hh_income. Median household income.
+#' \item pop. Count of the total population.
+#' \item black. Percent of population that identifies as being one race and being only Black or African American.
+#' \item hispanic. Percent of population that identifies as being Hispanic or Latino regardless of race.
+#' \item white. Percent of population that identifies as being one race and being only White or Caucasian.
+#' \item infant_price. Aggregated weekly, full-time median price charged for Center-based Care for infants (i.e. aged 0 through 23 months).
+#' \item toddler_price. Aggregated weekly, full-time median price charged for Center-based Care for toddlers (i.e. aged 24 through 35 months).
+#' \item preschool_price. Aggregated weekly, full-time median price charged for Center-based Care for preschoolers (i.e. aged 36 through 54 months).
+#' \item infant_family_price. Aggregated weekly, full-time median price charged for Family Childcare for infants (i.e. aged 0 through 23 months).
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name childcare
+#' @usage data(childcare)
+#' @format A (tibble) data frame with 34,567 rows and 15 variables.
+#' @source National Database of Childcare Prices from the Department of Labor. https://www.dol.gov/agencies/wb/topics/featured-childcare.
+"childcare"
+
+#' Cline Center Coup d’État Project Dataset
+#'
+#' This dataset from the Cline Center provides information on all known failed and successful coup events for every country in the world.
+#' The variables are as follows:
+#'
+#' \itemize{
+#' \item country. Name of the country where coup event occurred.
+#' \item year. Year of event.
+#' \item month. Month of event.
+#' \item day. Day of event.
+#' \item event_type. Indicates whether the event is a coup, attempted coup, or conspiracy.
+#' \item unrealized. A dummy variable where one indicates an unsuccessful coup or plot and zero otherwise.
+#' \item realized. A dummy variable where one indicates a successful coup and zero otherwise.
+#' \item conspiracy. A dummy variable where one indicates a coup conspiracy thwarted prior to execution and zero otherwise.
+#' \item attempt. A dummy variable where one indicates a coup was attempted by failed and zero otherwise.
+#' \item military. A dummy variable where one indicates a military coup/attempt/conspiracy and zero otherwise.
+#' \item foreign. A dummy variable where one indicates a foreign-backed coup/attempt/conspiracy and zero otherwise.
+#' \item auto. A dummy variable where one indicates an auto coup and zero otherwise.
+#' \item popular. A dummy variable where one indicates a popular revolt and zero otherwise.
+#' \item counter. A dummy variable where one indicates a counter-coup and zero otherwise.
+#' \item noharm. A dummy variable where one indicates the deposed executive was not injured or killed during the coup event and zero otherwise.
+#' \item injured. A dummy variable where one indicates the deposed executive was injured during the coup event and zero otherwise.
+#' \item killed. A dummy variable where one indicates the deposed executive was killed during the coup event and zero otherwise.
+#' \item harrest. A dummy variable where one indicates the deposed executive was placed under house arrest and zero otherwise.
+#' \item jailed. A dummy variable where one indicates the deposed executive was arrested, detained or jailed and zero otherwise.
+#' \item tried. A dummy variable where one indicates the deposed executive was tried and zero otherwise.
+#' \item fled. A dummy variable where one indicates the deposed executive fled the country and zero otherwise.
+#' \item exile. A dummy variable where one indicates the deposed executive was banished from the country and zero otherwise.
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name coups
+#' @usage data(coups)
+#' @format A (tibble) data frame with 981 rows and 22 variables.
+#' @source Peyton, Buddy, Joseph Bajjalieh, Dan Shalmon, Michael Martin, Jonathan Bonaguro, and Emilio Soto. 2023. Cline Center Coup d’État Project Dataset. Cline Center for Advanced Social Research. V.2.1.2. February 23. University of Illinois Urbana-Champaign.
+"coups"
+
+#' Immigration data from Twelfth Census of the United States (1900)
+#'
+#' This dataset is a transcribed version of the data from Table 35 of the Twelfth Census of the United States, completed in 1900. The data provide information on the foreign born in major metro areas around the US. Data was transcribed by Stacker Media.
+#' The variables are as follows:
+#'
+#' \itemize{
+#' \item city. City name.
+#' \item state. Name of state.
+#' \item total_foreign_born. total foreign born population in the city (1900).
+#' \item columns 3-49. Foreign born population from the indicated group.
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name census
+#' @usage data(census)
+#' @format A (tibble) data frame with 161 rows and 49 variables.
+#' @source Stacker media: https://github.com/stacker-media/data/tree/main/1900-census-immigrant-city
+"census"
+
 #' World Bank Informality Data
 #'
 #' A panel dataset containing data from World Bank indicators on urbanization and
