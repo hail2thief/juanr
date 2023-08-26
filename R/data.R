@@ -1,3 +1,113 @@
+#' PARLGOV Dataset on European elections
+#'
+#' Data on European election results, by political party.
+#' The variables are as follows:
+#'
+#' \itemize{
+#' \item country. Country.
+#' \item election. Type of election -- 'parliament' or 'ep' election.
+#' \item date. Date the election took place. If the election lasted for several days, we code the last date.
+#' \item party. Name of party.
+#' \item party_id. Party ID.
+#' \item vote_share. percentage of votes for a party.
+#' \item seats. number of seats won by party. Seats coded for alliance members if information available. Coded as 0 for parties that won no seats and as missing value for electoral alliances if seats are coded at the level of alliance members.
+#' \item total_seats. total number of seats.
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name euro_elections
+#' @usage data(euro_elections)
+#' @format A (tibble) data frame with 8,947 rows and 8 variables.
+#' @source Döring, Holger, Constantin Huber, Philip Manow, Maike Hesse and Alexandra Quaas. 2023. Parliaments and governments database (ParlGov): Information on parties, elections and cabinets in established democracies.
+"euro_elections"
+
+#' PARLGOV Dataset on European political parties
+#'
+#' Data on the characteristics of European political parties. Note that I excluded parties where the family variable was uncoded.
+#' The variables are as follows:
+#'
+#' \itemize{
+#' \item country. Country.
+#' \item party. Name of party.
+#' \item family. Broader ideological "family" (e.g., Conservative) that party belongs to.
+#' \item left_right. 0--10 scale mean value in left/right dimension with data from Castles/Mair 1983, Huber/Inglehart 1995, Benoit/Laver 2006 and CHES 2010.
+#' \item state_market. 0--10 scale mean value in 'regulation of the economy' dimension with data from Benoit/Laver 2006 and CHES 2010.
+#' \item liberty_authority. 0--10 scale mean value in 'libertarian/authoritarian' dimension with data from Benoit/Laver 2006 and CHES 2010.
+#' \item eu_anti_pro. 0--10 scale mean value in 'EU integration' dimension with data from Ray 1999, Benoit/Laver 2006 and CHES 2010.
+#' \item party_id. Party ID.
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name parties
+#' @usage data(parties)
+#' @format A (tibble) data frame with 1,672 rows and 8 variables.
+#' @source Döring, Holger, Constantin Huber, Philip Manow, Maike Hesse and Alexandra Quaas. 2023. Parliaments and governments database (ParlGov): Information on parties, elections and cabinets in established democracies.
+"parties"
+
+#' Data on the Big Five personality traits
+#'
+#' Dataset that provides big five personality trait scores for 307,313 people from different countries.
+#' The variables are as follows:
+#'
+#' \itemize{
+#' \item country. Country where respondent lives.
+#' \item age. Age of respondent.
+#' \item sex. Sex of respondent.
+#' \item agreeable_score. Agreeableness score, ranging from 0 (critical / rational) to 1 (friendly/compassionate).
+#' \item extraversion_score. Extraversion score, ranging from 0 (solitary/reserved) to 1 (outgoing/energetic).
+#' \item openness_score. Openness score, ranging from 0 (consistent/cautious) to 1 (inventive/curious).
+#' \item conscientiousness_score. Consccientiousness score, ranging from 0 (extravagant/careless) to 1 (efficient/organized).
+#' \item neuroticism_score. Neuroticism score, ranging from 0 (resilient/confident) to 1 (sensitive/nervous).
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name big_five
+#' @usage data(big_five)
+#' @format A (tibble) data frame with 307,313 rows and 8 variables.
+#' @source For info on the traits see here: https://en.wikipedia.org/wiki/Big_Five_personality_traits#Descriptions_of_the_particular_personality_traits. Data comes from here: https://github.com/automoto/big-five-data
+"big_five"
+
+
+#' Rebel Organization Leaders (ROLE) Database
+#'
+#' Dataset that provides a wide range of biographical information on all top rebel, insurgent, and terrorist leaders who were active in civil wars between 1980 and 2011.
+#' The variables are as follows:
+#'
+#' \itemize{
+#' \item leadercode. Leader code.
+#' \item name. Full name.
+#' \item state. The conflict country against which the leader fought.
+#' \item conflict. Name of the conflict in which the leader fought.
+#' \item group. Name of group.
+#' \item gender. Gender of leader.
+#' \item birth_year. Year of birth.
+#' \item dead. Is leader dead? Coded as of December 31, 2018.
+#' \item birth_place. Place of birth.
+#' \item education. Highest level of completed education.
+#' \item study_area. Area of study for highest degree achieved.
+#' \item entry_method. How did the individual come to lead the organization?
+#' \item western. Dummy variable where 1 means the leader obtained a degree (bachelor’s, master’s, doctorate, or equivalent) from a university in the US, UK, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Greece, Ireland, Italy, the Netherlands, Norway, Portugal, Spain, Sweden, or Switzerland and 0 otherwise.
+#' \item married. Dummy variable where 1 means the leader was married at some point and 0 otherwise.
+#' \item children. Dummy variable where 1 means the leader had children and 0 otherwise.
+#' \item religion. The religion with which the leader self-identified.
+#' \item elite_family. Did the leader come from an elite family with political power or connections?
+#' \item occupation. The leader’s primary occupation prior to his/her becoming rebel organization leader.
+#' \item train_abroad. Dummy variable where 1 means the leader received training abroad from a foreign military or foreign rebel group before becoming leader and 0 otherwise.
+#' \item death_cause. Cause of death.
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name rebel_leader
+#' @usage data(rebel_leader)
+#' @format A (tibble) data frame with 425 rows and 20 variables.
+#' @source Acosta, B., Huang, R., & Silverman, D. (2023). Introducing ROLE: A database of rebel leader attributes in armed conflict. Journal of Peace Research, 60(2), 352–361. https://doi.org/10.1177/00223433221077920
+"rebel_leader"
+
+
 #' Dataset on Incarcerated Populations (2023)
 #'
 #' Data on the racial composition of prison populations in the US, at the state-month level.
