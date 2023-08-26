@@ -1,3 +1,28 @@
+#' Dataset on Incarcerated Populations (2023)
+#'
+#' Data on the racial composition of prison populations in the US, at the state-month level.
+#' The variables are as follows:
+#'
+#' \itemize{
+#' \item date. Date.
+#' \item state. State. Count of total incarcerated population.
+#' \item incarcerated_total. Count of total incarcerated population.
+#' \item incarcerated_white. Count of white incarcerated population.
+#' \item incarcerated_black. Count of Black incarcerated population.
+#' \item incarcerated_hispanic. Count of Hispanic incarcerated population.
+#' \item incarcerated_amerind. Count of Amerindian incarcerated population.
+#' \item incarcerated_asian. Count of Asian incarcerated population.
+#' \item incarcerated_nonwhite. Count of nonwhite incarcerated population.
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name prison
+#' @usage data(prison)
+#' @format A (tibble) data frame with 9,585 rows and 9 variables.
+#' @source Klein, B., Ogbunugafor, C.B., Schafer, B.J. et al. COVID-19 amplified racial disparities in the US criminal legal system. Nature 617, 344–350 (2023). https://doi.org/10.1038/s41586-023-05980-2
+"prison"
+
 #' National Database of Childcare Prices
 #'
 #' A dataset that provides information on childcare prices and other demographics at the county-year level in the United States. Childcare prices are based on market rate surveys.
