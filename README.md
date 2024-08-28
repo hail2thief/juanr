@@ -9,10 +9,10 @@ economics + toy data from other data science courses.
 ## Installation
 
 You can install the development version of `{juanr}` from Github via the
-`{devtools}` package.
+`{remotes}` package.
 
 ``` r
-devtools::install_github("hail2thief/juanr")
+remotes::install_github("hail2thief/juanr")
 ```
 
 ## Contents
