@@ -1,3 +1,35 @@
+#' Amazon purchases
+#'
+#' dataset of Amazon purchases, merged with a survey of the purchasers. I picked a random subset of 2,000 purchasers for this dataset.
+#' The variables are as follows:
+#'
+#' \itemize{
+#' \item order_date. Date of purchase.
+#' \item price_per_unit. Price per unit.
+#' \item quantity. Quantity purchased.
+#' \item shipping_address_state. Shipping address state.
+#' \item category. Category of purchase.
+#' \item age. Age of purchaser.
+#' \item hispanic. Is purchaser Hispanic?
+#' \item race. Race of purchaser.
+#' \item education. Highest level of educational attainment for purchaser.
+#' \item income. Income of purchaser.
+#' \item gender. Gender of purchaser.
+#' \item hh_size. Household size.
+#' \item marijuana. Does the purchaser use marijuana?
+#' \item alcohol. Does the purchaser drink alcohol?
+#' \item id. Unique identifier for each purchaser.
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name amazon
+#' @usage data(amazon)
+#' @format A (tibble) data frame with 300,000 rows and 17 variables.
+#' @source Berke, A., Calacci, D., Mahari, R. et al. Open e-commerce 1.0, five years of crowdsourced U.S. Amazon purchase histories with user demographics. Sci Data 11, 491 (2024). https://doi.org/10.1038/s41597-024-03329-6
+"amazon"
+
+
 #' Art sales
 #'
 #' dataset of auction sales records, including artists’ attributes, and market information.
