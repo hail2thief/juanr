@@ -1,37 +1,12 @@
-rm(list=ls())
-
-
 # libraries
 library(tidyverse)
-library(vdem)
+library(vdemdata)
 library(here)
 
 
 # v-dem codebook
-vdem_codebook
+codebook
 
-
-# what variables to keep
-# section 2
-
-
-# main indices
-df1 = extract_vdem(section_number = 2)
-
-# other stuff
-df2 = extract_vdem(section_number = 8, include_external = TRUE)
-
-
-# subset to LA countries
-lac = c("Cuba", "Dominican Republic",
-        "Hait", "Jamaica", "Trinidad & Tobago",
-        "Belize", "Costa Rica", "El Salvador",
-        "Guatemala", "Honduras", "Mexico",
-        "Nicaragua", "Panama",
-        "Argentina", "Bolivia",
-        "Brazil", "Chile", "Colombia",
-        "Ecuador", "Paraguay", "Peru",
-        "Uruguay", "Venezuela")
 
 
 # Democracy stuff ---------------------------------------------------------
@@ -42,15 +17,13 @@ indicators = c("v2x_polyarchy",
                "v2x_libdem",
                "v2x_partipdem",
                "v2x_delibdem",
-               "v2x_egaldem",
-               "v2x_freexp_altinf")
+               "v2x_egaldem")
 
 vdem =
-  df1 %>%
-  filter(vdem_country_name %in% lac) %>%
-  select(country = vdem_country_name,
-         year,
-         all_of(indicators))
+  vdemdata::vdem |>
+  select(country = country_name, year, all_of(indicators)) |>
+  arrange(country) |>
+  as_tibble()
 
 
 # save data
@@ -58,14 +31,14 @@ save(vdem, file = here("data", "vdem.rda"), compress = "xz")
 
 
 # get dictionary
-dict = tibble(variable = vdem_codebook %>%
-                filter(name %in% indicators) %>%
-              pull(name),
-              label = vdem_codebook %>%
-                filter(name %in% indicators) %>%
+dict = tibble(variable = codebook %>%
+                filter(tag %in% indicators) %>%
+              pull(tag),
+              label = codebook %>%
+                filter(tag %in% indicators) %>%
               pull(question),
-              scale = vdem_codebook %>%
-                filter(name %in% indicators) %>%
+              scale = codebook %>%
+                filter(tag %in% indicators) %>%
               pull(scale))
 
 

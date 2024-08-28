@@ -1,3 +1,33 @@
+#' Art sales
+#'
+#' dataset of auction sales records, including artists’ attributes, and market information.
+#' The variables are as follows:
+#'
+#' \itemize{
+#' \item case_id. Unique identifier for each auction sale.
+#' \item artist_name. Name of the artist.
+#' \item lot_title. Title of the artwork.
+#' \item year_of_artwork. Year the artwork was created.
+#' \item event_year. Year the auction took place.
+#' \item nationality. Artist nationality.
+#' \item year_of_birth. Artist year of birth.
+#' \item genre. Genre of the artwork.
+#' \item country. Country where the auction took place.
+#' \item real_price_usd. Price of the artwork in real USD.
+#' \item size_inch_by_inch. Size of the artwork in inches.
+#' \item gender_male. Dummy variable for whether artist is male.
+#' \item elite_school. Dummy variable for whether artist attended an elite school.
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name art
+#' @usage data(art)
+#' @format A (tibble) data frame with 18,400 rows and 13 variables.
+#' @source Lee, K., Park, J., Goree, S. et al. Social signals predict contemporary art prices better than visual features, particularly in emerging markets. Sci Rep 14, 11615 (2024).
+"art"
+
+
 #' PARLGOV Dataset on European elections
 #'
 #' Data on European election results, by political party.
@@ -416,27 +446,21 @@
 #' The variables are as follows:
 #'
 #' \itemize{
-#' \item v2x_polyarchy. To what extent is the ideal of electoral democracy in its fullest sense achieved?.
-#' Interval, from low to high (0-1) .
-#' \item v2x_libdem. To what extent is the ideal of liberal democracy achieved?.
-#' Interval, from low to high (0-1) .
-#' \item v2x_partipdem. To what extent is the ideal of participatory democracy achieved?.
-#' Interval, from low to high (0-1) .
-#' \item v2x_delibdem. To what extent is the ideal of deliberative democracy achieved?.
-#' Interval, from low to high (0-1) .
-#' \item v2x_egaldem. To what extent is the ideal of egalitarian democracy achieved?.
-#' Interval, from low to high (0-1) .
-#' \item v2x_freexp_altinf. To what extent does government respect press and media freedom,
-#' the freedom of ordinary people to discuss political matters at home and in the public sphere,
-#' as well as the freedom of academic and cultural expression?. Interval, from low to high (0-1).
+#' \item country. Country.
+#' \item year. Year.
+#' \item v2x_egaldem. To what extent is the ideal of egalitarian democracy achieved? . Interval, from low to high (0-1).
+#' \item v2x_delibdem. To what extent is the ideal of deliberative democracy achieved? . Interval, from low to high (0-1).
+#' \item v2x_partipdem. To what extent is the ideal of participatory democracy achieved? . Interval, from low to high (0-1).
+#' \item v2x_libdem. To what extent is the ideal of liberal democracy achieved? . Interval, from low to high (0-1).
+#' \item v2x_polyarchy. To what extent is the ideal of electoral democracy in its fullest sense achieved? . Interval, from low to high (0-1).
 #' }
 #'
 #' @docType data
 #' @keywords datasets
 #' @name vdem
 #' @usage data(vdem)
-#' @format A (tibble) data frame with 4,013 rows and 8 variables.
-#' @source The Varieties of Democracy (V-DEM) project, via: https://github.com/xmarquez/vdem.
+#' @format A (tibble) data frame with 27,734 rows and 7 variables.
+#' @source The Varieties of Democracy (V-DEM) project, via: https://github.com/vdeminstitute/vdemdata
 "vdem"
 
 
