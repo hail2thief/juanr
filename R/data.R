@@ -1,3 +1,28 @@
+#' Migrant children dataset
+#'
+#' dataset on the placement of 550,000+ unaccompanied migrant children with local sponsors between January 2015 and May 2023.
+#' The variables are as follows:
+#'
+#' \itemize{
+#' \item childs_country_of_origin. Country of origin of the child.
+#' \item childs_gender. Gender of child.
+#' \item childs_date_of_entry. Date of entry of child.
+#' \item childs_date_of_release. Date of release of child.
+#' \item sponsor_category. Category of sponsor (note: I recoded "Family Friend" as "Distant relative or unrelated adult").
+#' \item relationship_of_sponsor. Relationship of sponsor to child.
+#' \item state_abbr. State abbreviation of sponsor.
+#' \item county. County of sponsor.
+#' \item city. City of sponsor.
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name migrant_children
+#' @usage data(migrant_children)
+#' @format A (tibble) data frame with 553,322 rows and 9 variables.
+#' @source https://github.com/nytimes/hhs-child-migrant-data.
+"migrant_children"
+
 #' Amazon purchases
 #'
 #' dataset of Amazon purchases, merged with a survey of the purchasers. I picked a random subset of 2,000 purchasers for this dataset.
