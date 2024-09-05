@@ -14,10 +14,10 @@ A collection of datasets I use for teaching. Mostly political science + economic
 ## Installation
 
 
-You can install the development version of `{juanr}` from Github via the `{devtools}` package.
+You can install the development version of `{juanr}` from Github via the `{remotes}` package.
 
 ```r
-devtools::install_github("hail2thief/juanr")
+remotes::install_github("hail2thief/juanr")
 ```
 
 ## Contents
