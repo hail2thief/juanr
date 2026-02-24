@@ -8,7 +8,7 @@
 A (tibble) data frame with 4,013 rows and 11 variables.
 }
 \source{
-The Varieties of Democracy (V-DEM) project, via: https://github.com/xmarquez/vdem.
+The Varieties of Democracy (V-DEM) project, via: \url{https://github.com/xmarquez/vdem}
 }
 \usage{
 data(gdp)
@@ -21,13 +21,13 @@ The variables are as follows:
 \itemize{
 \item country. Name of country.
 \item year. Year.
-\item e_cow_exports. What is the total value of a country’s exports? . Barbieri and Keshk (2016).
-\item e_cow_imports. What is the total value of a country’s imports? . Barbieri and Keshk (2016).
+\item e_cow_exports. What is the total value of a country's exports? . Barbieri and Keshk (2016).
+\item e_cow_imports. What is the total value of a country's imports? . Barbieri and Keshk (2016).
 \item e_migdppc. What is the GDP per capita? . The Maddison Project Database (2018)
 \item e_miinflat. What is the annual inflation rate? . Clio Infra (clio-infra.eu), based on Arroyo Abad, Davies and van Zanden (N.d.),
 Montevideo- Oxford Latin America Economic History Database (http://moxlad.fcs.edu.uy/es/basededatos.html), De Zwart (2011a), De Zwart (2011b),
 Reinhart and Rogoff (2011), Santing (N.d.), World Bank (2013).
-\item e_total_oil_income_pc. What is the real value of a country’s petroleum production? . Haber and Menaldo (2011).
+\item e_total_oil_income_pc. What is the real value of a country's petroleum production? . Haber and Menaldo (2011).
 \item e_mipopula. What is the total population (in thousands)? . Clio Infra (clio-infra.eu), drawing on Goldewijk, Beusen, Janssen (2010), History Database of Global Environment (www.pbl.nl/hyde).
 \item e_miurbpop. What is the total urban population? . Clio Infra (clio-infra.eu) based on Bairoch, Batou, Chevre (1988), Chandler (1987), de Vries (1984),
 History Database of Global Environment (www.pbl.nl/hyde), Etter, McAlpine, Possingham (2007), Grigg (1980), Goldewijk, Beusen, Janssen (2010),

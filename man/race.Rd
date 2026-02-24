@@ -5,7 +5,7 @@
 \alias{race}
 \title{Race and Colorism Survey Data from LAPOP}
 \format{
-A (tibble) data frame with 6,051 rows and 9 variables.
+A (tibble) data frame with 7,557 rows and 8 variables.
 }
 \source{
 Latin American Public Opinion Project.
@@ -18,7 +18,8 @@ Survey data on race and colorism in Colombia, Brazil, Mexico, Guatemala,
 and the Dominican Republic, from LAPOP, 2014 wave.
 The variables are as follows:
 \itemize{
-\item pais. Country
+\item r_id. Respondent ID.
+\item pais. Country.
 \item q2. Age.
 \item sex. Sex.
 \item etid. Ethnicity.

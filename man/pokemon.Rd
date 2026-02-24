@@ -19,8 +19,8 @@ The variables are as follows:
 \itemize{
 \item type1. Pokemon primary type.
 \item type2. Pokemon secondary type.
-\item height_m. Heigh in meters.
-\item weight_kg. Weight in kilometers.
+\item height_m. Height in meters.
+\item weight_kg. Weight in kilograms.
 \item capture_rate. Measure of how easy it is to capture the Pokemon. Higher catch rates mean that the Pokémon is easier to catch, up to a maximum of 255.
 \item hp. Determines how much damage a Pokémon can receive before fainting.
 \item attack. Determines the power of a physical move.

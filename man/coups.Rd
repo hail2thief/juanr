@@ -3,12 +3,12 @@
 \docType{data}
 \name{coups}
 \alias{coups}
-\title{Cline Center Coup d’État Project Dataset}
+\title{Cline Center Coup d'État Project Dataset}
 \format{
 A (tibble) data frame with 981 rows and 22 variables.
 }
 \source{
-Peyton, Buddy, Joseph Bajjalieh, Dan Shalmon, Michael Martin, Jonathan Bonaguro, and Emilio Soto. 2023. Cline Center Coup d’État Project Dataset. Cline Center for Advanced Social Research. V.2.1.2. February 23. University of Illinois Urbana-Champaign.
+Peyton, Buddy, Joseph Bajjalieh, Dan Shalmon, Michael Martin, Jonathan Bonaguro, and Emilio Soto. 2023. Cline Center Coup d'État Project Dataset. Cline Center for Advanced Social Research. V.2.1.2. February 23. University of Illinois Urbana-Champaign.
 }
 \usage{
 data(coups)

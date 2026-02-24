@@ -5,7 +5,7 @@
 \alias{therm}
 \title{US feeling thermometer data}
 \format{
-A (tibble) data frame with 4,986 rows and 21 variables.
+A (tibble) data frame with 4,989 rows and 21 variables.
 }
 \source{
 July 2017 "Views of the Electorate" Research Survey.

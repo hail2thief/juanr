@@ -7,8 +7,11 @@ Authors@R: person("Juan", "Tellez", email = "juan.f.tellez@gmail.com",
 Maintainer: Juan F. Tellez <juan.f.tellez@gmail.com>
 Description: A collection of data sets on data science, political science, and economics that I use for teaching. 
 License: MIT + file LICENSE
+URL: https://github.com/hail2thief/juanr
+BugReports: https://github.com/hail2thief/juanr/issues
 Encoding: UTF-8
 LazyData: true
+LazyDataCompression: xz
 RoxygenNote: 7.3.2
 Depends: R (>= 3.5.0)
 Suggests: tibble

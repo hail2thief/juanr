@@ -5,7 +5,7 @@
 \alias{leader}
 \title{Data on state leaders, mostly from the Leader Experience, Attribute, and Decision (LEAD) data set.}
 \format{
-A (tibble) data frame with 3,409 rows and 12 variables.
+A (tibble) data frame with 17,686 rows and 16 variables.
 }
 \source{
 `peacesciencer`.
@@ -14,7 +14,7 @@ A (tibble) data frame with 3,409 rows and 12 variables.
 data(leader)
 }
 \description{
-A sample of the UCDP GED (version 21.1), information on violent events including casualty estimates.
+Leader-year data on biographical attributes of state leaders, including military experience, education, and health.
 The variables are as follows:
 \itemize{
 \item country. Country.

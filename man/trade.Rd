@@ -5,7 +5,7 @@
 \alias{trade}
 \title{Interstate Trade}
 \format{
-A (tibble) data frame with 4,263 rows and 13 variables.
+A (tibble) data frame with 11,493 rows and 10 variables.
 }
 \source{
 From the `peacesciencer` package.

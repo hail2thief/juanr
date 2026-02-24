@@ -5,7 +5,7 @@
 \alias{ged}
 \title{UCDP Geo-referenced Event Database}
 \format{
-A (tibble) data frame with 261,864 rows and 14 variables.
+A (tibble) data frame with 176,579 rows and 14 variables.
 }
 \source{
 UCDP GED Version 2.11.

@@ -14,7 +14,7 @@ Lee, K., Park, J., Goree, S. et al. Social signals predict contemporary art pric
 data(art)
 }
 \description{
-dataset of auction sales records, including artists’ attributes, and market information.
+dataset of auction sales records, including artists' attributes, and market information.
 The variables are as follows:
 }
 \details{

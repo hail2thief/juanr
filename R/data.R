@@ -1,31 +1,20 @@
 #' Affairs dataset
 #'
-#' Wooldridge Source: R.C. Fair (1978), “A Theory of Extramarital Affairs,” Journal of Political Economy 86, 45-61, 1978. Data originally from Professor Fair’s web cite at the Yale University Department of Economics. He originally obtained the data from a survey by Psychology Today.
+#' Data on extramarital affairs from R.C. Fair (1978), "A Theory of Extramarital Affairs," Journal of Political Economy 86, 45-61. Originally obtained from a survey by Psychology Today.
+#' The variables are as follows:
 #'
-#' @section Notes: I just copied this over from {wooldridge}.
-#'
-#' @format A data.frame with 601 observations on 19 variables:
 #' \itemize{
-#'  \item \strong{id:} identifier
-#'  \item \strong{male:} =1 if male
-#'  \item \strong{age:} in years
-#'  \item \strong{yrsmarr:} years married
-#'  \item \strong{kids:} =1 if have kids
-#'  \item \strong{relig:} 5 = very relig., 4 = somewhat, 3 = slightly, 2 = not at all, 1 = anti
-#'  \item \strong{educ:} years schooling
-#'  \item \strong{occup:} occupation, reverse Hollingshead scale
-#'  \item \strong{ratemarr:} 5 = vry hap marr, 4 = hap than avg, 3 = avg, 2 = smewht unhap, 1 = vry unhap
-#'  \item \strong{naffairs:} number of affairs within last year
-#'  \item \strong{affair:} =1 if had at least one affair
-#'  \item \strong{vryhap:} ratemarr == 5
-#'  \item \strong{hapavg:} ratemarr == 4
-#'  \item \strong{avgmarr:} ratemarr == 3
-#'  \item \strong{unhap:} ratemarr == 2
-#'  \item \strong{vryrel:} relig == 5
-#'  \item \strong{smerel:} relig == 4
-#'  \item \strong{slghtrel:} relig == 3
-#'  \item \strong{notrel:} relig == 2
+#' \item male. =1 if male.
+#' \item age. Age in years.
+#' \item years_married. Years married.
+#' \item kids. =1 if have kids.
+#' \item relig. Religiosity (5 = very religious, 4 = somewhat, 3 = slightly, 2 = not at all, 1 = anti).
+#' \item educ. Years of schooling.
+#' \item occup. Occupation, reverse Hollingshead scale.
+#' \item marriage_rating. Marriage rating (5 = very happy, 4 = happier than avg, 3 = avg, 2 = somewhat unhappy, 1 = very unhappy).
+#' \item n_affairs. Number of affairs within last year.
 #' }
+#'
 #' @docType data
 #' @keywords datasets
 #' @name affairs
@@ -59,7 +48,7 @@
 #' @name migrant_children
 #' @usage data(migrant_children)
 #' @format A (tibble) data frame with 553,322 rows and 9 variables.
-#' @source https://github.com/nytimes/hhs-child-migrant-data.
+#' @source \url{https://github.com/nytimes/hhs-child-migrant-data}
 "migrant_children"
 
 #' Amazon purchases
@@ -89,14 +78,14 @@
 #' @keywords datasets
 #' @name amazon
 #' @usage data(amazon)
-#' @format A (tibble) data frame with 300,000 rows and 17 variables.
+#' @format A (tibble) data frame with 743,167 rows and 15 variables.
 #' @source Berke, A., Calacci, D., Mahari, R. et al. Open e-commerce 1.0, five years of crowdsourced U.S. Amazon purchase histories with user demographics. Sci Data 11, 491 (2024). https://doi.org/10.1038/s41597-024-03329-6
 "amazon"
 
 
 #' Art sales
 #'
-#' dataset of auction sales records, including artists’ attributes, and market information.
+#' dataset of auction sales records, including artists' attributes, and market information.
 #' The variables are as follows:
 #'
 #' \itemize{
@@ -193,7 +182,7 @@
 #' @name big_five
 #' @usage data(big_five)
 #' @format A (tibble) data frame with 307,313 rows and 8 variables.
-#' @source For info on the traits see here: https://en.wikipedia.org/wiki/Big_Five_personality_traits#Descriptions_of_the_particular_personality_traits. Data comes from here: https://github.com/automoto/big-five-data
+#' @source For info on the traits see \url{https://en.wikipedia.org/wiki/Big_Five_personality_traits}. Data comes from \url{https://github.com/automoto/big-five-data}.
 "big_five"
 
 
@@ -215,12 +204,12 @@
 #' \item education. Highest level of completed education.
 #' \item study_area. Area of study for highest degree achieved.
 #' \item entry_method. How did the individual come to lead the organization?
-#' \item western. Dummy variable where 1 means the leader obtained a degree (bachelor’s, master’s, doctorate, or equivalent) from a university in the US, UK, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Greece, Ireland, Italy, the Netherlands, Norway, Portugal, Spain, Sweden, or Switzerland and 0 otherwise.
+#' \item western. Dummy variable where 1 means the leader obtained a degree (bachelor's, master's, doctorate, or equivalent) from a university in the US, UK, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Greece, Ireland, Italy, the Netherlands, Norway, Portugal, Spain, Sweden, or Switzerland and 0 otherwise.
 #' \item married. Dummy variable where 1 means the leader was married at some point and 0 otherwise.
 #' \item children. Dummy variable where 1 means the leader had children and 0 otherwise.
 #' \item religion. The religion with which the leader self-identified.
 #' \item elite_family. Did the leader come from an elite family with political power or connections?
-#' \item occupation. The leader’s primary occupation prior to his/her becoming rebel organization leader.
+#' \item occupation. The leader's primary occupation prior to his/her becoming rebel organization leader.
 #' \item train_abroad. Dummy variable where 1 means the leader received training abroad from a foreign military or foreign rebel group before becoming leader and 0 otherwise.
 #' \item death_cause. Cause of death.
 #' }
@@ -287,10 +276,10 @@
 #' @name childcare
 #' @usage data(childcare)
 #' @format A (tibble) data frame with 34,567 rows and 15 variables.
-#' @source National Database of Childcare Prices from the Department of Labor. https://www.dol.gov/agencies/wb/topics/featured-childcare.
+#' @source National Database of Childcare Prices from the Department of Labor. \url{https://www.dol.gov/agencies/wb/topics/featured-childcare}
 "childcare"
 
-#' Cline Center Coup d’État Project Dataset
+#' Cline Center Coup d'État Project Dataset
 #'
 #' This dataset from the Cline Center provides information on all known failed and successful coup events for every country in the world.
 #' The variables are as follows:
@@ -325,7 +314,7 @@
 #' @name coups
 #' @usage data(coups)
 #' @format A (tibble) data frame with 981 rows and 22 variables.
-#' @source Peyton, Buddy, Joseph Bajjalieh, Dan Shalmon, Michael Martin, Jonathan Bonaguro, and Emilio Soto. 2023. Cline Center Coup d’État Project Dataset. Cline Center for Advanced Social Research. V.2.1.2. February 23. University of Illinois Urbana-Champaign.
+#' @source Peyton, Buddy, Joseph Bajjalieh, Dan Shalmon, Michael Martin, Jonathan Bonaguro, and Emilio Soto. 2023. Cline Center Coup d'État Project Dataset. Cline Center for Advanced Social Research. V.2.1.2. February 23. University of Illinois Urbana-Champaign.
 "coups"
 
 #' Immigration data from Twelfth Census of the United States (1900)
@@ -345,7 +334,7 @@
 #' @name census
 #' @usage data(census)
 #' @format A (tibble) data frame with 161 rows and 49 variables.
-#' @source Stacker media: https://github.com/stacker-media/data/tree/main/1900-census-immigrant-city
+#' @source Stacker media: \url{https://github.com/stacker-media/data/tree/main/1900-census-immigrant-city}
 "census"
 
 #' World Bank Informality Data
@@ -535,10 +524,10 @@
 "colony_long"
 
 
-#' Varieties of Democracy Indicators for Latin America
+#' Varieties of Democracy Indicators
 #'
 #' A dataset from the Varieties of Democracy (V-DEM) project that characterizes
-#' the different dimensions of democracy across Latin America.
+#' the different dimensions of democracy across countries worldwide.
 #' The variables are as follows:
 #'
 #' \itemize{
@@ -556,7 +545,7 @@
 #' @name vdem
 #' @usage data(vdem)
 #' @format A (tibble) data frame with 27,734 rows and 7 variables.
-#' @source The Varieties of Democracy (V-DEM) project, via: https://github.com/vdeminstitute/vdemdata
+#' @source The Varieties of Democracy (V-DEM) project, via: \url{https://github.com/vdeminstitute/vdemdata}
 "vdem"
 
 
@@ -568,13 +557,13 @@
 #' \itemize{
 #' \item country. Name of country.
 #' \item year. Year.
-#' \item e_cow_exports. What is the total value of a country’s exports? . Barbieri and Keshk (2016).
-#' \item e_cow_imports. What is the total value of a country’s imports? . Barbieri and Keshk (2016).
+#' \item e_cow_exports. What is the total value of a country's exports? . Barbieri and Keshk (2016).
+#' \item e_cow_imports. What is the total value of a country's imports? . Barbieri and Keshk (2016).
 #' \item e_migdppc. What is the GDP per capita? . The Maddison Project Database (2018)
 #' \item e_miinflat. What is the annual inflation rate? . Clio Infra (clio-infra.eu), based on Arroyo Abad, Davies and van Zanden (N.d.),
 #' Montevideo- Oxford Latin America Economic History Database (http://moxlad.fcs.edu.uy/es/basededatos.html), De Zwart (2011a), De Zwart (2011b),
 #' Reinhart and Rogoff (2011), Santing (N.d.), World Bank (2013).
-#' \item e_total_oil_income_pc. What is the real value of a country’s petroleum production? . Haber and Menaldo (2011).
+#' \item e_total_oil_income_pc. What is the real value of a country's petroleum production? . Haber and Menaldo (2011).
 #' \item e_mipopula. What is the total population (in thousands)? . Clio Infra (clio-infra.eu), drawing on Goldewijk, Beusen, Janssen (2010), History Database of Global Environment (www.pbl.nl/hyde).
 #' \item e_miurbpop. What is the total urban population? . Clio Infra (clio-infra.eu) based on Bairoch, Batou, Chevre (1988), Chandler (1987), de Vries (1984),
 #' History Database of Global Environment (www.pbl.nl/hyde), Etter, McAlpine, Possingham (2007), Grigg (1980), Goldewijk, Beusen, Janssen (2010),
@@ -591,7 +580,7 @@
 #' @name gdp
 #' @usage data(gdp)
 #' @format A (tibble) data frame with 4,013 rows and 11 variables.
-#' @source The Varieties of Democracy (V-DEM) project, via: https://github.com/xmarquez/vdem.
+#' @source The Varieties of Democracy (V-DEM) project, via: \url{https://github.com/xmarquez/vdem}
 "gdp"
 
 
@@ -601,7 +590,8 @@
 #' and the Dominican Republic, from LAPOP, 2014 wave.
 #' The variables are as follows:
 #' \itemize{
-#' \item pais. Country
+#' \item r_id. Respondent ID.
+#' \item pais. Country.
 #' \item q2. Age.
 #' \item sex. Sex.
 #' \item etid. Ethnicity.
@@ -614,7 +604,7 @@
 #' @keywords datasets
 #' @name race
 #' @usage data(race)
-#' @format A (tibble) data frame with 6,051 rows and 9 variables.
+#' @format A (tibble) data frame with 7,557 rows and 8 variables.
 #' @source Latin American Public Opinion Project.
 "race"
 
@@ -725,7 +715,7 @@
 #' \item duration. Duration of movie (in minutes).
 #' \item gross. How much the movie grossed in theaters (in USD).
 #' \item budget. How much the movie cost to make (in USD).
-#' \item imbd_score. The movie's average IMDB rating (0-10).
+#' \item imdb_score. The movie's average IMDB rating (0-10).
 #' \item color. Whether the movie is color or black and white.
 #' \item content_rating. The movie's parental advisory rating.
 #' }
@@ -734,7 +724,7 @@
 #' @keywords datasets
 #' @name movies
 #' @usage data(movies)
-#' @format A (tibble) data frame with 4,139 rows and 13 variables.
+#' @format A (tibble) data frame with 3,234 rows and 13 variables.
 #' @source IMDB via Kaggle.
 "movies"
 
@@ -746,8 +736,8 @@
 #' \itemize{
 #' \item type1. Pokemon primary type.
 #' \item type2. Pokemon secondary type.
-#' \item height_m. Heigh in meters.
-#' \item weight_kg. Weight in kilometers.
+#' \item height_m. Height in meters.
+#' \item weight_kg. Weight in kilograms.
 #' \item capture_rate. Measure of how easy it is to capture the Pokemon. Higher catch rates mean that the Pokémon is easier to catch, up to a maximum of 255.
 #' \item hp. Determines how much damage a Pokémon can receive before fainting.
 #' \item attack. Determines the power of a physical move.
@@ -880,7 +870,7 @@
 #' @keywords datasets
 #' @name trade
 #' @usage data(trade)
-#' @format A (tibble) data frame with 4,263 rows and 13 variables.
+#' @format A (tibble) data frame with 11,493 rows and 10 variables.
 #' @source From the `peacesciencer` package.
 "trade"
 
@@ -897,7 +887,7 @@
 #' \item polyarchy. the Varieties of Democracy "polyarchy" estimate of a country's quality of electoral democracy.
 #' \item milex. An estimate of military expenditures (in thousands).
 #' \item milper. An estimate of the size of military personnel (in thousands) for the state.
-#' \item The Composite Index of National Capability ("CINC") score. Roughly: a country's world share of military capability in that year.
+#' \item cinc. The Composite Index of National Capability ("CINC") score. Roughly: a country's world share of military capability in that year.
 #' \item gdp. Estimated GDP in 2011 USD.
 #' \item pop. Estimated population size.
 #' }
@@ -928,7 +918,7 @@
 #' @keywords datasets
 #' @name therm
 #' @usage data(therm)
-#' @format A (tibble) data frame with 4,986 rows and 21 variables.
+#' @format A (tibble) data frame with 4,989 rows and 21 variables.
 #' @source July 2017 "Views of the Electorate" Research Survey.
 "therm"
 
@@ -1011,13 +1001,13 @@
 #' @keywords datasets
 #' @name ged
 #' @usage data(ged)
-#' @format A (tibble) data frame with 261,864 rows and 14 variables.
+#' @format A (tibble) data frame with 176,579 rows and 14 variables.
 #' @source UCDP GED Version 2.11.
 "ged"
 
 #' Data on state leaders, mostly from the Leader Experience, Attribute, and Decision (LEAD) data set.
 #'
-#' A sample of the UCDP GED (version 21.1), information on violent events including casualty estimates.
+#' Leader-year data on biographical attributes of state leaders, including military experience, education, and health.
 #' The variables are as follows:
 #' \itemize{
 #' \item country. Country.
@@ -1042,7 +1032,7 @@
 #' @keywords datasets
 #' @name leader
 #' @usage data(leader)
-#' @format A (tibble) data frame with 3,409 rows and 12 variables.
+#' @format A (tibble) data frame with 17,686 rows and 16 variables.
 #' @source `peacesciencer`.
 "leader"
 
@@ -1059,7 +1049,6 @@
 #' \item co2. Annual production-based emissions of carbon dioxide (CO2), measured in million tonnes. This is based on territorial emissions, which do not account for emissions embedded in traded goods.
 #' \item coal_co2. Annual production-based emissions of carbon dioxide (CO2) from coal, measured in million tonnes. This is based on territorial emissions, which do not account for emissions embedded in traded goods.
 #' \item total_ghg. Total greenhouse gas emissions including land-use change and forestry, measured in million tonnes of carbon dioxide-equivalents.
-#' \item cumulative_co2. Cumulative production-based emissions of carbon dioxide (CO2) since the first year of data availability, measured in million tonnes. This is based on territorial emissions, which do not account for emissions embedded in traded goods.
 #' \item methane. Total methane emissions including land-use change and forestry, measured in million tonnes of carbon dioxide-equivalents.
 #' }
 #'
@@ -1068,7 +1057,7 @@
 #' @name climate
 #' @usage data(climate)
 #' @format A (tibble) data frame with 21,913 rows and 8 variables.
-#' @source Our World in Data. https://github.com/owid/co2-data
+#' @source Our World in Data. \url{https://github.com/owid/co2-data}
 "climate"
 
 
@@ -1099,3 +1088,61 @@
 #' @format A (tibble) data frame with 9,787 rows and 13 variables.
 #' @source The Database on Ideology, Money in Politics, and Elections (DIME).
 "bonica"
+
+#' ICE Administrative Arrests
+#'
+#' Data on ICE (Immigration and Customs Enforcement) administrative arrests, including information on apprehension circumstances, case status, and demographics. Likely duplicates have been removed.
+#' The variables are as follows:
+#'
+#' \itemize{
+#' \item apprehension_date. Date of apprehension.
+#' \item apprehension_state. State where apprehension took place.
+#' \item apprehension_aor. ICE Area of Responsibility for the apprehension.
+#' \item final_program. ICE program under which the arrest was made.
+#' \item final_program_group. Broader program group.
+#' \item apprehension_method. Method of apprehension (e.g., CAP Federal Incarceration, At-Large).
+#' \item apprehension_criminality. Criminality category (1 = Convicted Criminal, 2 = Pending Criminal Charges, 3 = Other Immigration Violator).
+#' \item case_status. Current case status (e.g., Deported/Removed, Active).
+#' \item case_category. Detailed case category.
+#' \item departed_date. Date of departure from the US (if applicable).
+#' \item departure_country. Country of departure/removal.
+#' \item final_order_yes_no. Whether a final order of removal has been issued (YES/NO).
+#' \item final_order_date. Date of final order of removal.
+#' \item birth_year. Year of birth.
+#' \item citizenship_country. Country of citizenship.
+#' \item gender. Gender.
+#' \item apprehension_site_landmark. Landmark or location description of apprehension site.
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name ice_arrests
+#' @usage data(ice_arrests)
+#' @format A (tibble) data frame with 362,202 rows and 17 variables.
+#' @source Deportation Data Project. \url{https://deportationdata.org/}
+"ice_arrests"
+
+#' ICE Detention Facility Daily Population
+#'
+#' Daily population counts at ICE (Immigration and Customs Enforcement) detention facilities across the United States, broken down by gender and criminal status.
+#' The variables are as follows:
+#'
+#' \itemize{
+#' \item detention_facility. Name of the detention facility.
+#' \item state. State where the facility is located.
+#' \item date. Date of the population count.
+#' \item n_detained. Total number of individuals detained.
+#' \item n_detained_at_midnight. Number of individuals detained at midnight.
+#' \item n_detained_male. Number of male individuals detained.
+#' \item n_detained_female. Number of female individuals detained.
+#' \item n_detained_convicted_criminal. Number of detained individuals who are convicted criminals.
+#' \item n_detained_possibly_under_18. Number of detained individuals who are possibly under 18 years old.
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name ice_detention
+#' @usage data(ice_detention)
+#' @format A (tibble) data frame with 661,928 rows and 9 variables.
+#' @source Deportation Data Project. \url{https://deportationdata.org/}
+"ice_detention"

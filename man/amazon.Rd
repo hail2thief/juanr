@@ -5,7 +5,7 @@
 \alias{amazon}
 \title{Amazon purchases}
 \format{
-A (tibble) data frame with 300,000 rows and 17 variables.
+A (tibble) data frame with 743,167 rows and 15 variables.
 }
 \source{
 Berke, A., Calacci, D., Mahari, R. et al. Open e-commerce 1.0, five years of crowdsourced U.S. Amazon purchase histories with user demographics. Sci Data 11, 491 (2024). https://doi.org/10.1038/s41597-024-03329-6

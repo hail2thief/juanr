@@ -5,7 +5,7 @@
 \alias{movies}
 \title{Movies data}
 \format{
-A (tibble) data frame with 4,139 rows and 13 variables.
+A (tibble) data frame with 3,234 rows and 13 variables.
 }
 \source{
 IMDB via Kaggle.
@@ -27,7 +27,7 @@ The variables are as follows:
 \item duration. Duration of movie (in minutes).
 \item gross. How much the movie grossed in theaters (in USD).
 \item budget. How much the movie cost to make (in USD).
-\item imbd_score. The movie's average IMDB rating (0-10).
+\item imdb_score. The movie's average IMDB rating (0-10).
 \item color. Whether the movie is color or black and white.
 \item content_rating. The movie's parental advisory rating.
 }

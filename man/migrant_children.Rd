@@ -8,7 +8,7 @@
 A (tibble) data frame with 553,322 rows and 9 variables.
 }
 \source{
-https://github.com/nytimes/hhs-child-migrant-data.
+\url{https://github.com/nytimes/hhs-child-migrant-data}
 }
 \usage{
 data(migrant_children)

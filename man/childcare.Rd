@@ -8,7 +8,7 @@
 A (tibble) data frame with 34,567 rows and 15 variables.
 }
 \source{
-National Database of Childcare Prices from the Department of Labor. https://www.dol.gov/agencies/wb/topics/featured-childcare.
+National Database of Childcare Prices from the Department of Labor. \url{https://www.dol.gov/agencies/wb/topics/featured-childcare}
 }
 \usage{
 data(childcare)

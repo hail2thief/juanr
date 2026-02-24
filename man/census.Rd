@@ -8,7 +8,7 @@
 A (tibble) data frame with 161 rows and 49 variables.
 }
 \source{
-Stacker media: https://github.com/stacker-media/data/tree/main/1900-census-immigrant-city
+Stacker media: \url{https://github.com/stacker-media/data/tree/main/1900-census-immigrant-city}
 }
 \usage{
 data(census)

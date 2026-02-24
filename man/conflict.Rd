@@ -25,7 +25,7 @@ The variables are as follows:
 \item polyarchy. the Varieties of Democracy "polyarchy" estimate of a country's quality of electoral democracy.
 \item milex. An estimate of military expenditures (in thousands).
 \item milper. An estimate of the size of military personnel (in thousands) for the state.
-\item The Composite Index of National Capability ("CINC") score. Roughly: a country's world share of military capability in that year.
+\item cinc. The Composite Index of National Capability ("CINC") score. Roughly: a country's world share of military capability in that year.
 \item gdp. Estimated GDP in 2011 USD.
 \item pop. Estimated population size.
 }

@@ -3,19 +3,19 @@
 \docType{data}
 \name{vdem}
 \alias{vdem}
-\title{Varieties of Democracy Indicators for Latin America}
+\title{Varieties of Democracy Indicators}
 \format{
 A (tibble) data frame with 27,734 rows and 7 variables.
 }
 \source{
-The Varieties of Democracy (V-DEM) project, via: https://github.com/vdeminstitute/vdemdata
+The Varieties of Democracy (V-DEM) project, via: \url{https://github.com/vdeminstitute/vdemdata}
 }
 \usage{
 data(vdem)
 }
 \description{
 A dataset from the Varieties of Democracy (V-DEM) project that characterizes
-the different dimensions of democracy across Latin America.
+the different dimensions of democracy across countries worldwide.
 The variables are as follows:
 }
 \details{

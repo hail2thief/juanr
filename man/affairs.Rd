@@ -5,29 +5,6 @@
 \alias{affairs}
 \title{Affairs dataset}
 \format{
-A data.frame with 601 observations on 19 variables:
-\itemize{
- \item \strong{id:} identifier
- \item \strong{male:} =1 if male
- \item \strong{age:} in years
- \item \strong{yrsmarr:} years married
- \item \strong{kids:} =1 if have kids
- \item \strong{relig:} 5 = very relig., 4 = somewhat, 3 = slightly, 2 = not at all, 1 = anti
- \item \strong{educ:} years schooling
- \item \strong{occup:} occupation, reverse Hollingshead scale
- \item \strong{ratemarr:} 5 = vry hap marr, 4 = hap than avg, 3 = avg, 2 = smewht unhap, 1 = vry unhap
- \item \strong{naffairs:} number of affairs within last year
- \item \strong{affair:} =1 if had at least one affair
- \item \strong{vryhap:} ratemarr == 5
- \item \strong{hapavg:} ratemarr == 4
- \item \strong{avgmarr:} ratemarr == 3
- \item \strong{unhap:} ratemarr == 2
- \item \strong{vryrel:} relig == 5
- \item \strong{smerel:} relig == 4
- \item \strong{slghtrel:} relig == 3
- \item \strong{notrel:} relig == 2
-}
-
 A (tibble) data frame with 601 rows and 9 variables.
 }
 \source{
@@ -37,10 +14,20 @@ A (tibble) data frame with 601 rows and 9 variables.
 data(affairs)
 }
 \description{
-Wooldridge Source: R.C. Fair (1978), “A Theory of Extramarital Affairs,” Journal of Political Economy 86, 45-61, 1978. Data originally from Professor Fair’s web cite at the Yale University Department of Economics. He originally obtained the data from a survey by Psychology Today.
+Data on extramarital affairs from R.C. Fair (1978), "A Theory of Extramarital Affairs," Journal of Political Economy 86, 45-61. Originally obtained from a survey by Psychology Today.
+The variables are as follows:
 }
-\section{Notes}{
- I just copied this over from {wooldridge}.
+\details{
+\itemize{
+\item male. =1 if male.
+\item age. Age in years.
+\item years_married. Years married.
+\item kids. =1 if have kids.
+\item relig. Religiosity (5 = very religious, 4 = somewhat, 3 = slightly, 2 = not at all, 1 = anti).
+\item educ. Years of schooling.
+\item occup. Occupation, reverse Hollingshead scale.
+\item marriage_rating. Marriage rating (5 = very happy, 4 = happier than avg, 3 = avg, 2 = somewhat unhappy, 1 = very unhappy).
+\item n_affairs. Number of affairs within last year.
 }
-
+}
 \keyword{datasets}

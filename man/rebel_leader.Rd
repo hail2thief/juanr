@@ -31,12 +31,12 @@ The variables are as follows:
 \item education. Highest level of completed education.
 \item study_area. Area of study for highest degree achieved.
 \item entry_method. How did the individual come to lead the organization?
-\item western. Dummy variable where 1 means the leader obtained a degree (bachelor’s, master’s, doctorate, or equivalent) from a university in the US, UK, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Greece, Ireland, Italy, the Netherlands, Norway, Portugal, Spain, Sweden, or Switzerland and 0 otherwise.
+\item western. Dummy variable where 1 means the leader obtained a degree (bachelor's, master's, doctorate, or equivalent) from a university in the US, UK, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Greece, Ireland, Italy, the Netherlands, Norway, Portugal, Spain, Sweden, or Switzerland and 0 otherwise.
 \item married. Dummy variable where 1 means the leader was married at some point and 0 otherwise.
 \item children. Dummy variable where 1 means the leader had children and 0 otherwise.
 \item religion. The religion with which the leader self-identified.
 \item elite_family. Did the leader come from an elite family with political power or connections?
-\item occupation. The leader’s primary occupation prior to his/her becoming rebel organization leader.
+\item occupation. The leader's primary occupation prior to his/her becoming rebel organization leader.
 \item train_abroad. Dummy variable where 1 means the leader received training abroad from a foreign military or foreign rebel group before becoming leader and 0 otherwise.
 \item death_cause. Cause of death.
 }

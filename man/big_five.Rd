@@ -8,7 +8,7 @@
 A (tibble) data frame with 307,313 rows and 8 variables.
 }
 \source{
-For info on the traits see here: https://en.wikipedia.org/wiki/Big_Five_personality_traits#Descriptions_of_the_particular_personality_traits. Data comes from here: https://github.com/automoto/big-five-data
+For info on the traits see \url{https://en.wikipedia.org/wiki/Big_Five_personality_traits}. Data comes from \url{https://github.com/automoto/big-five-data}.
 }
 \usage{
 data(big_five)

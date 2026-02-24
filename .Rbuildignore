@@ -1,6 +1,7 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
-.travis.yml
 README.Rmd
-temp/
-temp
+^temp/
+^data-raw$
+^CLAUDE\.md$
+^\.claude$
