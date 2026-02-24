@@ -21,7 +21,7 @@ Here’s the data I’ve got in the package so far:
 
 | **Object Name** | **Description** |
 |:---|:---|
-| `affairs` | Wooldridge Source: R.C. Fair (1978), “A Theory of Extramarital Affairs,” Journal of Political Economy 86, 45-61, 1978. Data originally from Professor Fair’s web cite at the Yale University Department of Economics. He originally obtained the data from a survey by Psychology Today. |
+| `affairs` | Data on extramarital affairs from R.C. Fair (1978), “A Theory of Extramarital Affairs,” Journal of Political Economy 86, 45-61. Originally obtained from a survey by Psychology Today. |
 | `amazon` | dataset of Amazon purchases, merged with a survey of the purchasers. I picked a random subset of 2,000 purchasers for this dataset. |
 | `art` | dataset of auction sales records, including artists’ attributes, and market information. |
 | `big_five` | Dataset that provides big five personality trait scores for 307,313 people from different countries. |
@@ -41,9 +41,11 @@ Here’s the data I’ve got in the package so far:
 | `fearon` | Replication data from the classic Fearon and Laitin (2003) study on the causes of civil wars. |
 | `gdp` | A country-year panel dataset from varied sources on economic and demographic indicators in Latin America. |
 | `ged` | A sample of the UCDP GED (version 21.1), information on violent events including casualty estimates. |
+| `ice_arrests` | Data on ICE (Immigration and Customs Enforcement) administrative arrests, including information on apprehension circumstances, case status, and demographics. Likely duplicates have been removed. |
+| `ice_detention` | Daily population counts at ICE (Immigration and Customs Enforcement) detention facilities across the United States, broken down by gender and criminal status. |
 | `informal` | A panel dataset containing data from World Bank indicators on urbanization and |
 | `invasions` | Data on land invasions in Brazil, at the municipal level, from Hidalgo et. al (2010). |
-| `leader` | A sample of the UCDP GED (version 21.1), information on violent events including casualty estimates. |
+| `leader` | Leader-year data on biographical attributes of state leaders, including military experience, education, and health. |
 | `migrant_children` | dataset on the placement of 550,000+ unaccompanied migrant children with local sponsors between January 2015 and May 2023. |
 | `movies` | A sample of movies and their characteristics from IMDB (1910-2016). |
 | `parties` | Data on the characteristics of European political parties. Note that I excluded parties where the family variable was uncoded. |
