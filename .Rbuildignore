@@ -1,6 +1,5 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
-README.Rmd
 ^temp/
 ^data-raw$
 ^CLAUDE\.md$

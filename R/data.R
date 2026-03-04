@@ -1146,3 +1146,81 @@
 #' @format A (tibble) data frame with 661,928 rows and 9 variables.
 #' @source Deportation Data Project. \url{https://deportationdata.org/}
 "ice_detention"
+
+#' Speed Dating Experiment
+#'
+#' Data from a speed dating experiment conducted at Columbia University between 2002 and 2004. Participants went on a series of four-minute "speed dates" and then rated their partners and indicated whether they would like to see them again. A "match" occurs when both people say yes. Each row is one date (one person meeting one partner), so the same participant appears in multiple rows. Before the event, participants reported what attributes they value in a partner and rated their own attributes; during the event they rated each partner.
+#'
+#' @format A tibble with 8,378 rows and 43 variables:
+#' \itemize{
+#'   \item \strong{person_id:} Unique identifier for the participant.
+#'   \item \strong{partner_id:} Unique identifier for the partner in this date.
+#'   \item \strong{wave:} Event number (1-21), each wave is a separate speed dating event.
+#'   \item \strong{gender:} Gender of the participant ("man" or "woman").
+#'   \item \strong{age:} Age of the participant.
+#'   \item \strong{race:} Race/ethnicity of the participant.
+#'   \item \strong{field:} Field of study.
+#'   \item \strong{goal:} Primary goal for participating (e.g., "Meet new people", "Get a date").
+#'   \item \strong{date_freq:} How often the participant goes on dates.
+#'   \item \strong{go_out:} How often the participant goes out (not necessarily on dates).
+#'   \item \strong{want_attractive:} Pre-event: importance placed on attractiveness in a partner.
+#'   \item \strong{want_sincere:} Pre-event: importance placed on sincerity in a partner.
+#'   \item \strong{want_intelligent:} Pre-event: importance placed on intelligence in a partner.
+#'   \item \strong{want_fun:} Pre-event: importance placed on fun in a partner.
+#'   \item \strong{want_ambitious:} Pre-event: importance placed on ambition in a partner.
+#'   \item \strong{want_shared_interests:} Pre-event: importance placed on shared interests in a partner.
+#'   \item \strong{rate_attractive:} Rating of partner's attractiveness (1-10).
+#'   \item \strong{rate_sincere:} Rating of partner's sincerity (1-10).
+#'   \item \strong{rate_intelligent:} Rating of partner's intelligence (1-10).
+#'   \item \strong{rate_fun:} Rating of partner's fun-ness (1-10).
+#'   \item \strong{rate_ambitious:} Rating of partner's ambition (1-10).
+#'   \item \strong{rate_shared_interests:} Rating of shared interests with partner (1-10).
+#'   \item \strong{rate_overall:} Overall liking of partner (1-10).
+#'   \item \strong{rate_prob_yes:} Estimated probability partner will say yes (1-10).
+#'   \item \strong{self_attractive:} Self-rating of attractiveness (1-10).
+#'   \item \strong{self_sincere:} Self-rating of sincerity (1-10).
+#'   \item \strong{self_intelligent:} Self-rating of intelligence (1-10).
+#'   \item \strong{self_fun:} Self-rating of fun (1-10).
+#'   \item \strong{self_ambitious:} Self-rating of ambition (1-10).
+#'   \item \strong{same_race:} Whether participant and partner are the same race (1 = yes, 0 = no).
+#'   \item \strong{decision:} Participant's decision: want to see partner again? (1 = yes, 0 = no).
+#'   \item \strong{decision_partner:} Partner's decision about the participant (1 = yes, 0 = no).
+#'   \item \strong{match:} Both said yes (1 = yes, 0 = no).
+#'   \item \strong{interest_sports:} Interest in sports (1-10).
+#'   \item \strong{interest_dining:} Interest in dining out (1-10).
+#'   \item \strong{interest_museums:} Interest in museums/galleries (1-10).
+#'   \item \strong{interest_art:} Interest in art (1-10).
+#'   \item \strong{interest_hiking:} Interest in hiking/camping (1-10).
+#'   \item \strong{interest_clubbing:} Interest in dancing/clubbing (1-10).
+#'   \item \strong{interest_reading:} Interest in reading (1-10).
+#'   \item \strong{interest_tv:} Interest in watching TV (1-10).
+#'   \item \strong{interest_movies:} Interest in movies (1-10).
+#'   \item \strong{interest_music:} Interest in music (1-10).
+#' }
+#' @docType data
+#' @keywords datasets
+#' @name speed_dating
+#' @usage data(speed_dating)
+#' @source Fisman, R., Iyengar, S.S., Kamenica, E. and Simonson, I. (2006). Gender Differences in Mate Selection: Evidence from a Speed Dating Experiment. \emph{Quarterly Journal of Economics}, 121(2), 673-697.
+"speed_dating"
+
+#' NYC Evictions
+#'
+#' Records of evictions executed by city marshals in New York City from 2017 to 2024. Each row is one eviction. Covers all five boroughs with geographic coordinates for most records.
+#'
+#' @format A tibble with 97,257 rows and 7 variables:
+#' \itemize{
+#'   \item \strong{date:} Date the eviction was executed.
+#'   \item \strong{borough:} NYC borough (Bronx, Brooklyn, Manhattan, Queens, Staten Island).
+#'   \item \strong{neighborhood:} Neighborhood Tabulation Area (NTA) name.
+#'   \item \strong{zip:} Zip code of the eviction address.
+#'   \item \strong{type:} Whether the eviction was residential or commercial.
+#'   \item \strong{lat:} Latitude of the eviction address.
+#'   \item \strong{lon:} Longitude of the eviction address.
+#' }
+#' @docType data
+#' @keywords datasets
+#' @name evictions
+#' @usage data(evictions)
+#' @source NYC Open Data, Department of Investigation (DOI) Marshals Evictions. \url{https://data.cityofnewyork.us/City-Government/Evictions/6z8x-wfk4}
+"evictions"

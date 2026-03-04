@@ -3,13 +3,11 @@
 
 <img src="temp/sticker.png" width="30%">
 
-A collection of datasets I use for teaching. Mostly political science +
-economics + toy data from other data science courses.
+A collection of datasets I use for teaching. Mostly political science + economics + toy data from other data science courses.
 
 ## Installation
 
-You can install the development version of `{juanr}` from Github via the
-`{remotes}` package.
+You can install the development version of `{juanr}` from Github via the `{remotes}` package.
 
 ``` r
 remotes::install_github("hail2thief/juanr")
@@ -17,44 +15,46 @@ remotes::install_github("hail2thief/juanr")
 
 ## Contents
 
-Here’s the data I’ve got in the package so far:
+Here's the data I've got in the package so far:
 
 | **Object Name** | **Description** |
 |:---|:---|
-| `affairs` | Data on extramarital affairs from R.C. Fair (1978), “A Theory of Extramarital Affairs,” Journal of Political Economy 86, 45-61. Originally obtained from a survey by Psychology Today. |
-| `amazon` | dataset of Amazon purchases, merged with a survey of the purchasers. I picked a random subset of 2,000 purchasers for this dataset. |
-| `art` | dataset of auction sales records, including artists’ attributes, and market information. |
-| `big_five` | Dataset that provides big five personality trait scores for 307,313 people from different countries. |
-| `bonica` | Candidate level data on money raised, spent, and other stuff during political campaigns, from the Database on Ideology, Money in Politics, and Elections (DIME). |
-| `bot` | A sample of respondents from the Cooperative Election Survey. Inspired by the Twitter account “American Voter Bot”. |
-| `census` | This dataset is a transcribed version of the data from Table 35 of the Twelfth Census of the United States, completed in 1900. The data provide information on the foreign born in major metro areas around the US. Data was transcribed by Stacker Media. |
-| `childcare` | A dataset that provides information on childcare prices and other demographics at the county-year level in the United States. Childcare prices are based on market rate surveys. |
-| `climate` | Country-year data from “Our World in Data” on CO2 and Greenhouse gas emissions. |
-| `colony_long` | A dataset linking information on the sale of provincial governorships by the Spanish Crown in Peru during the 17th and 18th century with contemporary development outcomes. The dataset is from Guardado (2018). |
-| `colony` | A cross-sectional dataset containing information on the sale of provincial governorships by the Spanish Crown in \#’ Peru during the 17th and 18th century, as well as province-level demographic and economic data. The dataset is ’ from Guardado (2018). |
-| `conflict` | State-year level UCDP data focusing on conflict onset. |
-| `coups` | This dataset from the Cline Center provides information on all known failed and successful coup events for every country in the world. |
-| `crime` | 2018 LAPOP survey of experiences with and exposure to crime in select Latin American countries. |
-| `elections` | County-level data with electoral results from 2012, 2016, and 2020. Note: some 2020 results based on estimates. |
-| `euro_elections` | Data on European election results, by political party. |
-| `fatal` | Data on American soldier fatalities during the US invasion of Iraq and Afghanistan, collected by iCasualties. Note: Data here may not reflect most updated numbers. |
-| `fearon` | Replication data from the classic Fearon and Laitin (2003) study on the causes of civil wars. |
-| `gdp` | A country-year panel dataset from varied sources on economic and demographic indicators in Latin America. |
-| `ged` | A sample of the UCDP GED (version 21.1), information on violent events including casualty estimates. |
-| `ice_arrests` | Data on ICE (Immigration and Customs Enforcement) administrative arrests, including information on apprehension circumstances, case status, and demographics. Likely duplicates have been removed. |
-| `ice_detention` | Daily population counts at ICE (Immigration and Customs Enforcement) detention facilities across the United States, broken down by gender and criminal status. |
-| `informal` | A panel dataset containing data from World Bank indicators on urbanization and |
-| `invasions` | Data on land invasions in Brazil, at the municipal level, from Hidalgo et. al (2010). |
-| `leader` | Leader-year data on biographical attributes of state leaders, including military experience, education, and health. |
-| `migrant_children` | dataset on the placement of 550,000+ unaccompanied migrant children with local sponsors between January 2015 and May 2023. |
-| `movies` | A sample of movies and their characteristics from IMDB (1910-2016). |
-| `parties` | Data on the characteristics of European political parties. Note that I excluded parties where the family variable was uncoded. |
-| `pokemon` | A dataset containing the characteristics of 800+ Pokemon. |
-| `prison` | Data on the racial composition of prison populations in the US, at the state-month level. |
-| `race` | Survey data on race and colorism in Colombia, Brazil, Mexico, Guatemala, |
-| `rebel_leader` | Dataset that provides a wide range of biographical information on all top rebel, insurgent, and terrorist leaders who were active in civil wars between 1980 and 2011. |
-| `therm` | Feeling thermometer survey data on a variety of social groups in the USA. From from the July 2017 “Views of the Electorate” Research Survey. |
-| `trade` | State-year level Correlates of War data focusing on international trade, including imports, exports, and IGO membership. |
-| `vdem` | A dataset from the Varieties of Democracy (V-DEM) project that characterizes |
-| `vietnam` | Replication data from Kalyvas and Kocher (2009) on the characteristics of the Hamlet Evaluation System during the Vietnam War. |
-| `wealth` | Survey data on income, household assets, and other markers of wealth/poverty in Honduras. |
+| `affairs` | Affairs dataset |
+| `amazon` | Amazon purchases |
+| `art` | Art sales |
+| `big_five` | Data on the Big Five personality traits |
+| `bonica` | Data on Campaign Finance from the Database on Ideology, Money in Politics, and Elections (DIME). |
+| `bot` | American Voter Bot data |
+| `census` | Immigration data from Twelfth Census of the United States (1900) |
+| `childcare` | National Database of Childcare Prices |
+| `climate` | Data on CO2 and Greenhouse Gas Emissions by Our World in Data |
+| `colony` | Data on Sale of Provincial Governorships in Peru, 17th-18th century |
+| `colony_long` | Data on Sale of Provincial Governorships in Peru, 17th-18th century, and Contemporary Outcomes |
+| `conflict` | Conflict onset |
+| `coups` | Cline Center Coup d'État Project Dataset |
+| `crime` | Data on Crime Victimization in Latin America, 2018 |
+| `elections` | US County Election Data |
+| `euro_elections` | PARLGOV Dataset on European elections |
+| `evictions` | NYC Evictions |
+| `fatal` | iCasualties data on US fatalities in Iraq and Afghanistan |
+| `fearon` | Ethnicity, insurgency, and civil war dataset |
+| `gdp` | Economic and Population Panel Data for Latin America |
+| `ged` | UCDP Geo-referenced Event Database |
+| `ice_arrests` | ICE Administrative Arrests |
+| `ice_detention` | ICE Detention Facility Daily Population |
+| `informal` | World Bank Informality Data |
+| `invasions` | Data on Land Invasions in Brazil |
+| `leader` | Data on state leaders, mostly from the Leader Experience, Attribute, and Decision (LEAD) data set. |
+| `migrant_children` | Migrant children dataset |
+| `movies` | Movies data |
+| `parties` | PARLGOV Dataset on European political parties |
+| `pokemon` | Pokemon data |
+| `prison` | Dataset on Incarcerated Populations (2023) |
+| `race` | Race and Colorism Survey Data from LAPOP |
+| `rebel_leader` | Rebel Organization Leaders (ROLE) Database |
+| `speed_dating` | Speed Dating Experiment |
+| `therm` | US feeling thermometer data |
+| `trade` | Interstate Trade |
+| `vdem` | Varieties of Democracy Indicators |
+| `vietnam` | Dynamics of violence in civil war dataset |
+| `wealth` | Data on Income and Household Assets in Honduras, 2018 |
