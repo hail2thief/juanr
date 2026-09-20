@@ -1,9 +1,10 @@
 
+
 # `juanr`: Data for Teaching
 
 <img src="temp/sticker.png" width="30%">
 
-A collection of datasets I use for teaching. Mostly political science + economics + toy data from other data science courses.
+A collection of datasets I use for teaching. Mostly political science + economics + toy data from other data science courses. It is a data-only package (no functions).
 
 ## Installation
 
